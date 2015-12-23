@@ -1,103 +1,213 @@
-<!doctype html>
-<html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rebecca Ansems | Portfolio</title>
-    <link rel="stylesheet" href="css/foundation.css" />
-    <script src="js/vendor/modernizr.js"></script>
-  </head>
-  <body>
-      <div class="row">
-        <div class="large-12 columns">
-          <h1>Portfolio</h1>
-          <hr/>
-        </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Rebecca Ansems | Portfolio </title>
+<meta charset="utf-8">
+<meta name="viewpaort" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Oswald:700,300|Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/mainstyle.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<!-- Smooth scroll */ -->
+<script>
+ $(function() {
+   $('a[href*=#]:not([href=#])').click(function() {
+     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+       var target = $(this.hash);
+       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+       if (target.length) {
+         $('html,body').animate({
+           scrollTop: target.offset().top
+         }, 1000);
+         return false;
+       }
+     }
+   });
+ });
+</script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="20">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Portfolio</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#home">Home</a></li>
+        <li><a href="#intro">Introducton</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron" id="home">
+  <div class="container text-center">
+    <br>
+    <h1 class="home">Rebecca Ansems</h1>      
+    <h4 class="home">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce congue neque dictum sem bibendum commodo. Fusce facilisis at neque varius porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus orci at dui ullamcorper, ut placerat orci facilisis.
+    </h4><br>
+  </div>
+</div>
+
+<div class="container-fluid text-center" id="intro">
+  <h2>Introduction</h2><br>
+  <div class="col-sm-4"></div>
+  <div class="col-sm-4">
+    <img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+  </div>
+</div>
+
+<div class="container-fluid text-center" id="intro">
+  <div class="col-sm-3"></div>
+  <div class="col-sm-6">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce congue neque dictum sem bibendum commodo. Fusce facilisis at neque varius porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus orci at dui ullamcorper, ut placerat orci facilisis. Proin ex ex, imperdiet ut pharetra eget, auctor nec sem. Quisque vel dui elementum, mollis justo et, venenatis neque. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam elit erat, dignissim nec nulla vel, ultricies consectetur est. Duis accumsan porta facilisis. Nulla risus augue, eleifend volutpat pretium ut, venenatis eget lorem.<br><br>
+    </p>
+  </div>
+</div>
+
+
+<div class="container-fluid text-center" id="projects">    
+  <h2>Projects</h2>
+  <div class="row">
+   <div class="col-sm-2"></div>
+   
+   <div class="col-sm-2">
+    <h3>Sudoku</h3>
+    <a data-toggle="modal" data-target="#sudoku" id="modal-button">
+      <img src="http://placehold.it/300x170?text=IMAGE" class=".img-responsive" style="width:100%" alt="Image"></a>
+    </div>
+    
+    <div class="col-sm-2">
+      <h3>Battleship</h3>
+      <a data-toggle="modal" data-target="#battleShip" id="modal-button">
+        <img src="http://placehold.it/300x170?text=IMAGE" class=".img-responsive" style="width:100%" alt="Image"></a>
       </div>
 
-      <div class="row">
-        <div class="large-12 columns">
-          <img src="http://placehold.it/1000x500&text=[banner img]">
+      <div class="col-sm-2">
+        <h3>Rainy Days</h3>
+        <a data-toggle="modal" data-target="#rainyDays" id="modal-button">
+          <img src="http://placehold.it/300x170?text=IMAGE" class=".img-responsive" style="width:100%" alt="Image"></a>
         </div>
-      </div>
 
-      <div class="row">
-        <hr>
-        <div class="large-8 columns">
-          <h4>About</h4>
-          <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
-          <i class="fi-social-twitter"></i>
-        </div>
-        <div class="large-4 columns">
-          <img src="http://placehold.it/400x300&text=[img]">
-        </div>
-      </div>
-
-      <div class="row">
-        <hr>
-        <div class="large-12 columns">
-          <h4>Work</h4>
-          <p>Click on each image!</p>
-
-          <ul class="clearing-thumbs small-block-grid-1 medium-block-grid-2 large-block-grid-4" data-clearing>
-            <li>
-              <a href="http://placehold.it/800x500&text=[img]">
-              <img data-caption="caption here..." src="http://placehold.it/800x500&text=[img]"></a>
-            </li>
-            <li>
-              <a href="http://placehold.it/800x500&text=[img]"><img data-caption="caption 2 here..." src="http://placehold.it/800x500&text=[img]"></a>
-            </li>
-            <li>
-              <a href="http://placehold.it/800x500&text=[img]"><img data-caption="caption 3 here..." src="http://placehold.it/800x500&text=[img]"></a>
-            </li>
-            <li>
-              <a href="http://placehold.it/800x500&text=[img]"><img data-caption="caption 4 here..." src="http://placehold.it/800x500&text=[img]"></a>
-            </li>
-            <li>
-              <a href="http://placehold.it/800x500&text=[img]"><img data-caption="caption 5 here..." src="http://placehold.it/800x500&text=[img]"></a>
-            </li>       
-            <li>
-              <a href="http://placehold.it/800x500&text=[img]"><img data-caption="caption 6 here..." src="http://placehold.it/800x500&text=[img]"></a>
-            </li> 
-          </ul>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="large-12 columns">
-          <hr>
-          <h4>Contact Me</h4>
-          <div class="large-4 columns">
-            Email: <a class="__cf_email__" href="/cdn-cgi/l/email-protection" data-cfemail="117c74517c68617e6365777e7d787e3f727e7c">[email protected]</a><script data-cfhash='f9e31' type="text/javascript">
-/* <![CDATA[ */!function(){try{var t="currentScript"in document?document.currentScript:function(){for(var t=document.getElementsByTagName("script"),e=t.length;e--;)if(t[e].getAttribute("data-cfhash"))return t[e]}();if(t&&t.previousSibling){var e,r,n,i,c=t.previousSibling,a=c.getAttribute("data-cfemail");if(a){for(e="",r=parseInt(a.substr(0,2),16),n=2;a.length-n;n+=2)i=parseInt(a.substr(n,2),16)^r,e+=String.fromCharCode(i);e=document.createTextNode(e),c.parentNode.replaceChild(e,c)}t.parentNode.removeChild(t);}}catch(u){}}()/* ]]> */</script>
+        <div class="col-sm-2">
+          <h3>#ProjectTowerHogg</h3>
+          <a data-toggle="modal" data-target="#projectTowerhogg" id="modal-button">
+            <img src="http://placehold.it/300x170?text=IMAGE" class=".img-responsive" style="width:100%" alt="Image"></a>
           </div>
-          <div class="large-4 columns">
-            Twitter: @twitterhandle
-          </div>
-          <div class="large-4 columns">
-            Phone: 555-555-1234
-          </div>
         </div>
       </div>
 
-      <footer class="row">
-          <div class="large-12 columns">
-            <hr/>
-            <div class="row">
-              <div class="large-6 columns">
-                <p>© Copyright no one at all. Go to town.</p>
-              </div>
-              <div class="large-6 columns">
-                <ul class="inline-list right">
-                  <li><a href="#">Link 1</a></li>
-                  <li><a href="#">Link 2</a></li>
-                  <li><a href="#">Link 3</a></li>
-                  <li><a href="#">Link 4</a></li>
-                </ul>
-              </div>
+      <!-- Modals -->
+      <div id="sudoku" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h2 class="modal-title">Sudoku</h2>
+            </div>
+            <div class="modal-body">
+              <img src="http://placehold.it/300x170?text=IMAGE" class=".img-responsive" style="width:100%" alt="Image">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat ante at tortor elementum, at ornare lacus semper. Integer ultrices volutpat urna, eu tempus sem dapibus ut. Fusce vulputate ante quis maximus efficitur. Fusce ut lorem egestas, aliquam enim sit amet, ullamcorper nisl. Phasellus eget luctus mi, nec dapibus augue. Suspendisse aliquet est orci, in finibus leo pharetra in. Etiam sollicitudin urna nec hendrerit ultrices. Pellentesque volutpat, neque eu tempus laoreet, sem mauris luctus elit, id suscipit nulla sapien sed justo. Nunc non arcu dapibus, fermentum augue non, venenatis mauris. Nullam dolor ligula, aliquet vel libero ultrices, feugiat molestie felis. Sed vel ullamcorper neque, vel laoreet ex. Mauris interdum enim malesuada turpis volutpat egestas. Nam cursus pulvinar nunc eget mattis.</p><br>
+              <p>GitHub</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div id="battleShip" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h2 class="modal-title">Battleship</h4>
+            </div>
+            <div class="modal-body">
+              <img src="http://placehold.it/300x170?text=IMAGE" class=".img-responsive" style="width:100%" alt="Image">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat ante at tortor elementum, at ornare lacus semper. Integer ultrices volutpat urna, eu tempus sem dapibus ut. Fusce vulputate ante quis maximus efficitur. Fusce ut lorem egestas, aliquam enim sit amet, ullamcorper nisl. Phasellus eget luctus mi, nec dapibus augue. Suspendisse aliquet est orci, in finibus leo pharetra in. Etiam sollicitudin urna nec hendrerit ultrices. Pellentesque volutpat, neque eu tempus laoreet, sem mauris luctus elit, id suscipit nulla sapien sed justo. Nunc non arcu dapibus, fermentum augue non, venenatis mauris. Nullam dolor ligula, aliquet vel libero ultrices, feugiat molestie felis. Sed vel ullamcorper neque, vel laoreet ex. Mauris interdum enim malesuada turpis volutpat egestas. Nam cursus pulvinar nunc eget mattis.</p><br>
+              <p>GitHub</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="rainyDays" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h2 class="modal-title">Rainy Days</h4>
+            </div>
+            <div class="modal-body">
+              <img src="http://placehold.it/300x170?text=IMAGE" class=".img-responsive" style="width:100%" alt="Image">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat ante at tortor elementum, at ornare lacus semper. Integer ultrices volutpat urna, eu tempus sem dapibus ut. Fusce vulputate ante quis maximus efficitur. Fusce ut lorem egestas, aliquam enim sit amet, ullamcorper nisl. Phasellus eget luctus mi, nec dapibus augue. Suspendisse aliquet est orci, in finibus leo pharetra in. Etiam sollicitudin urna nec hendrerit ultrices. Pellentesque volutpat, neque eu tempus laoreet, sem mauris luctus elit, id suscipit nulla sapien sed justo. Nunc non arcu dapibus, fermentum augue non, venenatis mauris. Nullam dolor ligula, aliquet vel libero ultrices, feugiat molestie felis. Sed vel ullamcorper neque, vel laoreet ex. Mauris interdum enim malesuada turpis volutpat egestas. Nam cursus pulvinar nunc eget mattis.</p><br>
+              <p>iPhone || Android || GitHub</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="projectTowerhogg" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h2 class="modal-title">#ProjectTowerFall</h4>
+            </div>
+            <div class="modal-body">
+              <img src="http://placehold.it/300x170?text=IMAGE" class=".img-responsive" style="width:100%" alt="Image">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat ante at tortor elementum, at ornare lacus semper. Integer ultrices volutpat urna, eu tempus sem dapibus ut. Fusce vulputate ante quis maximus efficitur. Fusce ut lorem egestas, aliquam enim sit amet, ullamcorper nisl. Phasellus eget luctus mi, nec dapibus augue. Suspendisse aliquet est orci, in finibus leo pharetra in. Etiam sollicitudin urna nec hendrerit ultrices. Pellentesque volutpat, neque eu tempus laoreet, sem mauris luctus elit, id suscipit nulla sapien sed justo. Nunc non arcu dapibus, fermentum augue non, venenatis mauris. Nullam dolor ligula, aliquet vel libero ultrices, feugiat molestie felis. Sed vel ullamcorper neque, vel laoreet ex. Mauris interdum enim malesuada turpis volutpat egestas. Nam cursus pulvinar nunc eget mattis.</p><br>
+              <p>Itch.io || GitHub</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container-fluid text-center" id="contact">
+        <h2>Contact</h2>
+        <div class="col-sm-1"></div>
+        <div class="col-sm-5">
+          <h3>Map</h3>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27005.662559238335!2d-63.61017245829087!3d44.645670663008275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b5a211407dbfac1%3A0x666be3a6438b2ddc!2sHalifax%2C+NS!5e0!3m2!1sen!2sca!4v1450639404531" style="width:100%" frameborder="0" style="border:0" class="img-responsive"></iframe>
+        </div>
+        <div class="col-sm-5">
+          <h3>Info</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce congue neque dictum sem bibendum commodo. Fusce facilisis at neque varius porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus orci at dui ullamcorper, ut placerat orci facilisis. Proin ex ex, imperdiet ut pharetra eget, auctor nec sem. Quisque vel dui elementum, mollis justo et, venenatis neque. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam elit erat, dignissim nec nulla vel, ultricies consectetur est. Duis accumsan porta facilisis. Nulla risus augue, eleifend volutpat pretium ut, venenatis eget lorem.<br><br><br><br>
+          </p>
+        </div>
+      </div>
+
+      <footer class="container-fluid text-center" id="footer">
+        <p>Footer Text</p>
       </footer>
-    
-  </body>
-</html>
+
+    </body>
+    </html>

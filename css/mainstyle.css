@@ -1,0 +1,100 @@
+/* colours: 
+#2B2B2B - Black
+#DE1B1B - Red
+#39DBEA - Blue
+#F6F6F6 - White
+#E9E581 - Yellow */
+
+.navbar {
+	margin-bottom: 0;
+	border-radius: 0;
+	background-color: #2B2B2B;
+	color: #F6F6F6;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.jumbotron {
+	padding-top: 30px;
+	padding-bottom: 10px;
+	margin-bottom: 0px;
+}
+
+#home, .modal-header{
+	background-color: #2980b9;
+	color: #F6F6F6;
+}
+
+#contact, #intro, .modal-body {
+	background-color: #F6F6F6;
+	color: #2B2B2B;
+}
+
+#projects, #footer, .modal-footer {
+	background-color: #2B2B2B;
+	color: #F6F6F6;
+}
+
+#projects {
+	padding-bottom: 2em;
+}
+
+#modal-button:hover {
+	opacity: 0.4;
+	filter: alpha(opacity=40);
+}
+
+h1, h2, h3 {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h2 {
+	padding: 0em;
+	font-size: 3em;
+}
+
+h4 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 1.5em;
+}
+
+p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 1.2em;
+}
+
+img {
+	padding-bottom: 1em;
+}
+
+footer {
+	background-color: #f2f2f2;
+	padding: 25px;
+}
+
+::selection {
+	color: #F6F6F6;
+	background: #2980b9;
+}
+
+::-moz-selection { /* Code for Firefox */
+	color: #F6F6F6;
+	background: #2980b9;
+}
+
+h4::selection, h1::selection {
+	color: #2980b9;
+	background: #2B2B2B;
+}
+
+h4::-moz-selection, h1::-moz-selection{ /* Code for Firefox */
+	color: #F6F6F6;
+	background: #2980b9;
+}
