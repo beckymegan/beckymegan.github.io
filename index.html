@@ -94,19 +94,19 @@
 
         <div class="col-sm-2">
           <h3>Battleship</h3>
-          <a data-toggle="modal" data-target="#battleShip" id="modal-button">
+          <a data-toggle="modal" data-target="#battleship" id="modal-button">
             <img src="img/Battleship.jpg" class=".img-responsive" style="width:100%" alt="Image"></a>
           </div>
 
           <div class="col-sm-2">
             <h3>Rainy Days</h3>
-            <a data-toggle="modal" data-target="#rainyDays" id="modal-button">
+            <a data-toggle="modal" data-target="#rainydays" id="modal-button">
               <img src="img/IcRainyDays.jpg" class=".img-responsive" style="width:100%" alt="Image"></a>
             </div>
 
             <div class="col-sm-2">
               <h3>#ProjectTowerHogg</h3>
-              <a data-toggle="modal" data-target="#projectTowerhogg" id="modal-button">
+              <a data-toggle="modal" data-target="#projecttowerhogg" id="modal-button">
                 <img src="img/IcProjectTowerHogg.jpg" class=".img-responsive" style="width:100%" alt="Image"></a>
               </div>
             </div>
@@ -148,7 +148,7 @@
             </div>
           </div>
 
-          <div id="battleShip" class="modal fade" role="dialog">
+          <div id="battleship" class="modal fade" role="dialog">
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
@@ -157,11 +157,27 @@
                 </div>
                 <div class="modal-body">
                   <img src="img/Battleship.jpg" class=".img-responsive" style="width:100%" alt="Image">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat ante at tortor elementum, at ornare lacus semper. Integer ultrices volutpat urna, eu tempus sem dapibus ut. Fusce vulputate ante quis maximus efficitur. Fusce ut lorem egestas, aliquam enim sit amet, ullamcorper nisl. Phasellus eget luctus mi, nec dapibus augue. Suspendisse aliquet est orci, in finibus leo pharetra in. Etiam sollicitudin urna nec hendrerit ultrices. Pellentesque volutpat, neque eu tempus laoreet, sem mauris luctus elit, id suscipit nulla sapien sed justo. Nunc non arcu dapibus, fermentum augue non, venenatis mauris. Nullam dolor ligula, aliquet vel libero ultrices, feugiat molestie felis. Sed vel ullamcorper neque, vel laoreet ex. Mauris interdum enim malesuada turpis volutpat egestas. Nam cursus pulvinar nunc eget mattis.</p><br>
-                  <p>GitHub</p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <h6>
+                    Platforms: PC<br>
+                    Language: Java<br>
+                    Team: Pascha Protter, Abdullah Neghaban, and Matthew Smith<br>
+                    CSCI 2110 Final Project - April 2014
+                  </h6>
+                  <br>
+                  <p>
+                    Battleship is played like a typical battleship board game, the player places three different ships (submarine, destroyer, and aircraft) on a 8x8 grid and after successfully submitting the location of the player's ships the game starts with the player's board on the left and the opponents on the right. The player then takes turns with the AI selecting different squares that they think one of the ships may be on. If the player/AI has hit a ship the block will turn red and "OPPONENT HIT PLAYER SHIP/PLAYER HIT OPPONENT SHIP" will appear in the ships log at the top of the screen. If the player/AI selects a square that doesn't have a ship at that location then the square will turn grey and the battle log will show "OPPONENT MISSED PLAYER SHIP/PLAYER MISSED OPPONENT SHIP". The game continues until the player or the AI hits, "sinks", every one of the other's ships. The game then either displays "YOU WIN" if the player sunk all the AI's ships or "YOU LOSE" if the AI sunk all the player's ships.
+                    <br><br>
+                    The AI for the opponent works by selecting a random square, stored on a 2D array, that is on the "checkerboard" (A1, A3, A5, A7, B2, B4, B6, B8, C1, C3...) and if the AI recieves the boolean that a ship was not hit, eg a grey space, then the AI will select another, different, square that resides on the "checkerboard" on it's next turn. However, if the AI recieves the boolean that a ship was hit, eg a red space, then the AI will select a space directly above, below, left or right, of the current space. If the second space selected is a miss, grey, then on the following turn the AI will then select directly above, below, left or right, excluding whichever option was chosen before. The AI will continue doing this until all directions have been chosen and no longer has any other options, the AI will then continue selecting random locations (in the "checkerboard" pattern). However, if the second space selected is a hit as well the AI will continue in that direction until it hits a miss, grey space, then the AI will continue with checking the space directly above/below/left/right like if the space had been a miss.
+                    <br><br>
+                    I made the entire AI for the battleship game by first researching optimum battleship stradegies, and then converting those techniques into code. Pascha and I worked together on the GUI, working closely with the Netbeans IDE and it's built in UI system. The biggest challenge with Battleship was getting all elements working together, the UI, the AI, and the player.
+                    </p><br>
+                  <div class="btn-group btn-group-justified">
+                    <a href="http://www.mediafire.com/download/la39x79x1t0gg46/Battleship.jar" target="_blank" class="btn btn-primary">Download</a>
+                    <a href="https://github.com/matt24smith/Battleship" target="_blank" class="btn btn-primary">GitHub</a>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
                 </div>
               </div>
             </div>
