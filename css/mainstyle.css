@@ -103,6 +103,14 @@ p {
 	font-size: 1.2em;
 }
 
+a {
+	color: inherit;
+}
+
+a:hover {
+	color: #2980b9;
+}
+
 img {
 	border-style: solid;
 	border-width: 0.5em;
