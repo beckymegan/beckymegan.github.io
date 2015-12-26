@@ -2,7 +2,7 @@
 #2B2B2B - Black
 #2980b9 - Blue
 #F6F6F6 - White
-#E9E581 - Yellow */
+*/
 
 .navbar {
 	margin-bottom: 0;
@@ -104,7 +104,7 @@ p {
 }
 
 a {
-	color: inherit;
+	color: #2980b9;
 }
 
 a:hover {
@@ -118,13 +118,13 @@ img {
 }
 
 iframe {
-	padding-top: 0.3em;
+	padding-top: 0.7em;
 	padding-bottom: 1.5em;
 }
 
 footer {
 	background-color: #f2f2f2;
-	padding: 25px;
+	padding: 1em;
 }
 
 /* Prevent modal scrolling background */
@@ -150,4 +150,44 @@ h4::selection, h1::selection {
 h4::-moz-selection, h1::-moz-selection{ /* Code for Firefox */
 	color: #F6F6F6;
 	background: #2980b9;
+}
+
+
+
+
+
+
+
+.social {
+  height: 2em;
+  text-align: center;
+}
+
+.social a {
+  position: absolute;
+  padding: 0.1em;
+  -webkit-transition: color 300ms ease-in-out;
+  transition: color 300ms ease-out;
+
+  background-color: inherit;
+  -webkit-transition: background-color 300ms ease-in-out;
+  transition: background-color 300ms ease-in-out;
+}
+
+.social a:hover, .social a:hover div{
+  text-decoration: none;
+  background-color: #2980b9;
+  color: #2B2B2B;
+  -webkit-transition: color 300ms ease-in-out;
+  transition: color 300ms ease-in-out;
+}
+
+.social i {
+  font-size: 3em;
+}
+
+.social div {
+  margin-top: 3px;
+  font-weight: 400;
+  font-size: 16px;
 }

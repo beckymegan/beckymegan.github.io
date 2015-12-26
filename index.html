@@ -7,6 +7,7 @@
   <link href='https://fonts.googleapis.com/css?family=Oswald:700,300|Open+Sans' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/mainstyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
@@ -83,212 +84,232 @@
 
   <div class="container-fluid text-center" id="skills">
     <div class="row">
-    <h2>Skills</h2>
-    <div class="col-sm-2"></div>
-    <div class="col-sm-4">
-      <h3>Technical Skills</h3>
-      <p>
-        Intermediate knowledge of Java and C#.<br>
-        Intermediate knowledge of Unity 5 and Unreal Engine 4.<br>
-        Basic knowledge of HTML and CSS.<br>
-        Proficient in Microsoft Word, Microsoft PowerPoint, and Microsoft Excel.<br>
-        Proficient in Adobe CS5 Photoshop, and Premiere Pro.<br>
-        Experience using both Microsoft- and Mac-based computer platforms.<br>
-      </p>
-    </div>
-    <div class="col-sm-4">
-      <h3>Non-Technical Skills</h3>
-      <p>
-        Leadership skills gained from Women in Technology Society (WiTS) as vice-president of social events.<br>
-        Patience and communication skills gained from my previous job at Glow Parties and leadership roles at WiTS.<br>
-        Self-motivation skills gained from the full creation and release of my own one-person studio games for iOS and Android systems.<br>
-      </p>
-    </div>
+      <h2>Skills</h2>
+      <div class="col-sm-2"></div>
+      <div class="col-sm-4">
+        <h3>Technical Skills</h3>
+        <p>
+          Intermediate knowledge of Java and C#.<br>
+          Intermediate knowledge of Unity 5 and Unreal Engine 4.<br>
+          Basic knowledge of HTML and CSS.<br>
+          Proficient in Microsoft Word, Microsoft PowerPoint, and Microsoft Excel.<br>
+          Proficient in Adobe CS5 Photoshop, and Premiere Pro.<br>
+          Experience using both Microsoft- and Mac-based computer platforms.<br>
+        </p>
+      </div>
+      <div class="col-sm-4">
+        <h3>Non-Technical Skills</h3>
+        <p>
+          Leadership skills gained from Women in Technology Society (WiTS) as vice-president of social events.<br>
+          Patience and communication skills gained from my previous job at Glow Parties and leadership roles at WiTS.<br>
+          Self-motivation skills gained from the full creation and release of my own one-person studio games for iOS and Android systems.<br>
+        </p>
+      </div>
     </div>
     <div class="col-sm-5"></div>
-    <div class="col-sm-2"><a href="txt/RebeccaAnsemsResume.pdf"><h3>Download Resume</h3></a></div>
+    <div class="col-sm-2"><a href="txt/RebeccaAnsemsResume.pdf" target="_blank"><h3>Download Resume</h3></a></div>
   </div>
 
   <div class="container-fluid text-center" id="projects">    
     <h2>Projects</h2>
     <div class="row">
-      <div class="col-sm-2"></div>
+      <div class="col-sm-3"></div>
 
-      <div class="col-sm-2">
+      <div class="col-sm-3">
         <h3>Magic - Sudoku Solver</h3>
         <a data-toggle="modal" data-target="#sudoku" id="modal-button">
-          <img src="img/SudokuSolver.jpg" class=".img-responsive" style="width:100%" alt="Image"></a>
+          <img src="img/SudokuSolver.jpg" class=".img-responsive" style="width:100%" alt="Image">
+        </a>
+      </div>
+      <div class="col-sm-3">
+        <h3>Battleship</h3>
+        <a data-toggle="modal" data-target="#battleship" id="modal-button">
+          <img src="img/Battleship.jpg" class=".img-responsive" style="width:100%" alt="Image">
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3"></div>
+      <div class="col-sm-3">
+        <h3>Rainy Days</h3>
+        <a data-toggle="modal" data-target="#rainydays" id="modal-button">
+          <img src="img/IcRainyDays.jpg" class=".img-responsive" style="width:100%" alt="Image">
+        </a>
+      </div>
+
+      <div class="col-sm-3">
+        <h3>#ProjectTowerHogg</h3>
+        <a data-toggle="modal" data-target="#projecttowerhogg" id="modal-button">
+          <img src="img/IcProjectTowerHogg.jpg" class=".img-responsive" style="width:100%" alt="Image">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modals -->
+  <div id="sudoku" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title">Magic - Sudoku Solver</h3>
         </div>
-
-        <div class="col-sm-2">
-          <h3>Battleship</h3>
-          <a data-toggle="modal" data-target="#battleship" id="modal-button">
-            <img src="img/Battleship.jpg" class=".img-responsive" style="width:100%" alt="Image"></a>
+        <div class="modal-body">
+          <img src="img/SudokuSolver.jpg" class=".img-responsive" style="width:100%" alt="Image">
+          <h6>
+            Platforms: PC<br>
+            Language: Java<br>
+            Team: Jacob Filmore and Joe Nip<br>
+            <a href="http://www.voltaeffect.com/the-megathon-open-hackathon-at-volta/" target="_blank">The Megathon - November 14, 2014</a>
+          </h6>
+          <br>
+          <p>
+            Magic - Sudoku Solver allows users to enter in a Sudoku puzzle, easy (2x2) or hard (3x3), and then either solve the full puzzle outright or enter in other numbers into remaining squares, then check to see if they're right. This allows the user to both find the full solution to the puzzle as well as see if they are correct with their own guesses (without seeing if they're correct about all their guesses, or solving the puzzle entirely).
+            <br><br>
+            Magic solves the puzzles by creating a 2D array with the user inputted data. Magic then checks for row, column, and box conflicts, returning true boolean if there is a conflict. Magic continues to run through different combinations of numbers (for the spots that the user did not input a number) until a set of numbers is found which does not return true for any of the conflict checks. Next Magic checks to see if there are any more sets of numbers that could result in a solution, if there is another set of numbers that could also be a solution then Magic warns the user that the solution shown may not be the only solution possible.
+            <br><br>
+            Jacob and I worked on the algorithms/checks used to determine if there is a conflict among the row/column/box, I specifically spent a lot of time researching about the different ways of solving different types of Sudoku puzzles, and then converting those strategies to code. I also helped Joe on parts of the GUI, specifically helping to differentiate the known numbers with the numbers the user entered to check.
+          </p><br>
+          <div class="btn-group btn-group-justified">
+            <a href="http://www.mediafire.com/download/qf6agwo3mb7tvkm/Sudoku_Solver.jar" target="_blank" class="btn btn-primary">Download</a>
+            <a href="https://github.com/beckymegan/SudokuHackathon2014" target="_blank" class="btn btn-primary">GitHub</a>
           </div>
-
-          <div class="col-sm-2">
-            <h3>Rainy Days</h3>
-            <a data-toggle="modal" data-target="#rainydays" id="modal-button">
-              <img src="img/IcRainyDays.jpg" class=".img-responsive" style="width:100%" alt="Image"></a>
-            </div>
-
-            <div class="col-sm-2">
-              <h3>#ProjectTowerHogg</h3>
-              <a data-toggle="modal" data-target="#projecttowerhogg" id="modal-button">
-                <img src="img/IcProjectTowerHogg.jpg" class=".img-responsive" style="width:100%" alt="Image"></a>
-              </div>
-            </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-          <!-- Modals -->
-          <div id="sudoku" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h3 class="modal-title">Magic - Sudoku Solver</h3>
-                </div>
-                <div class="modal-body">
-                  <img src="img/SudokuSolver.jpg" class=".img-responsive" style="width:100%" alt="Image">
-                  <h6>
-                    Platforms: PC<br>
-                    Language: Java<br>
-                    Team: Jacob Filmore and Joe Nip<br>
-                    <a href="http://www.voltaeffect.com/the-megathon-open-hackathon-at-volta/">The Megathon - November 14, 2014</a>
-                  </h6>
-                  <br>
-                  <p>
-                    Magic - Sudoku Solver allows users to enter in a Sudoku puzzle, easy (2x2) or hard (3x3), and then either solve the full puzzle outright or enter in other numbers into remaining squares, then check to see if they're right. This allows the user to both find the full solution to the puzzle as well as see if they are correct with their own guesses (without seeing if they're correct about all their guesses, or solving the puzzle entirely).
-                    <br><br>
-                    Magic solves the puzzles by creating a 2D array with the user inputted data. Magic then checks for row, column, and box conflicts, returning true boolean if there is a conflict. Magic continues to run through different combinations of numbers (for the spots that the user did not input a number) until a set of numbers is found which does not return true for any of the conflict checks. Next Magic checks to see if there are any more sets of numbers that could result in a solution, if there is another set of numbers that could also be a solution then Magic warns the user that the solution shown may not be the only solution possible.
-                    <br><br>
-                    Jacob and I worked on the algorithms/checks used to determine if there is a conflict among the row/column/box, I specifically spent a lot of time researching about the different ways of solving different types of Sudoku puzzles, and then converting those strategies to code. I also helped Joe on parts of the GUI, specifically helping to differentiate the known numbers with the numbers the user entered to check.
-                  </p><br>
-                  <div class="btn-group btn-group-justified">
-                    <a href="http://www.mediafire.com/download/qf6agwo3mb7tvkm/Sudoku_Solver.jar" target="_blank" class="btn btn-primary">Download</a>
-                    <a href="https://github.com/beckymegan/SudokuHackathon2014" target="_blank" class="btn btn-primary">GitHub</a>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+  <div id="battleship" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title">Battleship</h3>
+        </div>
+        <div class="modal-body">
+          <img src="img/Battleship.jpg" class=".img-responsive" style="width:100%" alt="Image">
+          <h6>
+            Platforms: PC<br>
+            Language: Java<br>
+            Team: Pascha Protter, Abdullah Neghaban, and Matthew Smith<br>
+            CSCI 2110 Final Project - April 2014
+          </h6>
+          <br>
+          <p>
+            Battleship is played like a typical battleship board game, the player places three different ships (submarine, destroyer, and aircraft) on a 8x8 grid and after successfully submitting the location of the player's ships the game starts with the player's board on the left and the opponents on the right. The player then takes turns with the AI selecting different squares that they think one of the ships may be on. If the player/AI has hit a ship the block will turn red and "OPPONENT HIT PLAYER SHIP/PLAYER HIT OPPONENT SHIP" will appear in the ships log at the top of the screen. If the player/AI selects a square that doesn't have a ship at that location then the square will turn grey and the battle log will show "OPPONENT MISSED PLAYER SHIP/PLAYER MISSED OPPONENT SHIP". The game continues until the player or the AI hits, "sinks", every one of the other's ships. The game then either displays "YOU WIN" if the player sunk all the AI's ships or "YOU LOSE" if the AI sunk all the player's ships.
+            <br><br>
+            The AI for the opponent works by selecting a random square, stored on a 2D array, that is on the "checkerboard" (A1, A3, A5, A7, B2, B4, B6, B8, C1, C3...) and if the AI recieves the boolean that a ship was not hit, eg a grey space, then the AI will select another, different, square that resides on the "checkerboard" on it's next turn. However, if the AI recieves the boolean that a ship was hit, eg a red space, then the AI will select a space directly above, below, left or right, of the current space. If the second space selected is a miss, grey, then on the following turn the AI will then select directly above, below, left or right, excluding whichever option was chosen before. The AI will continue doing this until all directions have been chosen and no longer has any other options, the AI will then continue selecting random locations (in the "checkerboard" pattern). However, if the second space selected is a hit as well the AI will continue in that direction until it hits a miss, grey space, then the AI will continue with checking the space directly above/below/left/right like if the space had been a miss.
+            <br><br>
+            I made the entire AI for the battleship game by first researching optimum battleship stradegies, and then converting those techniques into code. Pascha and I worked together on the GUI, working closely with the Netbeans IDE and it's built in UI system. The biggest challenge with Battleship was getting all elements working together, the UI, the AI, and the player.
+          </p><br>
+          <div class="btn-group btn-group-justified">
+            <a href="http://www.mediafire.com/download/la39x79x1t0gg46/Battleship.jar" target="_blank" class="btn btn-primary">Download</a>
+            <a href="https://github.com/matt24smith/Battleship" target="_blank" class="btn btn-primary">GitHub</a>
           </div>
-
-          <div id="battleship" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h3 class="modal-title">Battleship</h3>
-                </div>
-                <div class="modal-body">
-                  <img src="img/Battleship.jpg" class=".img-responsive" style="width:100%" alt="Image">
-                  <h6>
-                    Platforms: PC<br>
-                    Language: Java<br>
-                    Team: Pascha Protter, Abdullah Neghaban, and Matthew Smith<br>
-                    CSCI 2110 Final Project - April 2014
-                  </h6>
-                  <br>
-                  <p>
-                    Battleship is played like a typical battleship board game, the player places three different ships (submarine, destroyer, and aircraft) on a 8x8 grid and after successfully submitting the location of the player's ships the game starts with the player's board on the left and the opponents on the right. The player then takes turns with the AI selecting different squares that they think one of the ships may be on. If the player/AI has hit a ship the block will turn red and "OPPONENT HIT PLAYER SHIP/PLAYER HIT OPPONENT SHIP" will appear in the ships log at the top of the screen. If the player/AI selects a square that doesn't have a ship at that location then the square will turn grey and the battle log will show "OPPONENT MISSED PLAYER SHIP/PLAYER MISSED OPPONENT SHIP". The game continues until the player or the AI hits, "sinks", every one of the other's ships. The game then either displays "YOU WIN" if the player sunk all the AI's ships or "YOU LOSE" if the AI sunk all the player's ships.
-                    <br><br>
-                    The AI for the opponent works by selecting a random square, stored on a 2D array, that is on the "checkerboard" (A1, A3, A5, A7, B2, B4, B6, B8, C1, C3...) and if the AI recieves the boolean that a ship was not hit, eg a grey space, then the AI will select another, different, square that resides on the "checkerboard" on it's next turn. However, if the AI recieves the boolean that a ship was hit, eg a red space, then the AI will select a space directly above, below, left or right, of the current space. If the second space selected is a miss, grey, then on the following turn the AI will then select directly above, below, left or right, excluding whichever option was chosen before. The AI will continue doing this until all directions have been chosen and no longer has any other options, the AI will then continue selecting random locations (in the "checkerboard" pattern). However, if the second space selected is a hit as well the AI will continue in that direction until it hits a miss, grey space, then the AI will continue with checking the space directly above/below/left/right like if the space had been a miss.
-                    <br><br>
-                    I made the entire AI for the battleship game by first researching optimum battleship stradegies, and then converting those techniques into code. Pascha and I worked together on the GUI, working closely with the Netbeans IDE and it's built in UI system. The biggest challenge with Battleship was getting all elements working together, the UI, the AI, and the player.
-                  </p><br>
-                  <div class="btn-group btn-group-justified">
-                    <a href="http://www.mediafire.com/download/la39x79x1t0gg46/Battleship.jar" target="_blank" class="btn btn-primary">Download</a>
-                    <a href="https://github.com/matt24smith/Battleship" target="_blank" class="btn btn-primary">GitHub</a>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-          <div id="rainydays" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h3 class="modal-title">Rainy Days</h3>
-                </div>
-                <div class="modal-body">
-                  <img src="img/RainyDays.jpg" class=".img-responsive" style="width:100%" alt="Image">
-                  <h6>
-                    Platforms: Mobile<br>
-                    Language: C# - Unity<br>
-                    Summer 2015
-                  </h6>
-                  <br>
-                  <p>
-                    Nothing ruins a picnic faster than rain clouds and an ant invasion! Help save the picnickers from a ruined day by tapping away the ants and clouds. Features many challenging levels, high replayability, and addictive gameplay. Zero in-app purchases and does not require wifi results in a fun game to play, anywhere. Regular updates keeps gameplay fresh and new, it’s a new adventure every time you play!
-                    <br><br>
-                    Rainy Days is a simple one tap game where players have to quickly tap away clouds (the longer the clouds are on screen the lower the score) while also tapping away ants (if the ants get to the picnic basket the player loses health). Successfully tapping away a cloud or ant increases the player's score by one. Once a certain score is reached, dependent on the level, the level is medalled and the next level is unlocked. Gold medal if the player reaches the required score, with full health and under the time limit (which changes dependent on the level), silver medal if the player reaches the required score with full health but over the time limit, and bronze medal if the player finishes with less than full health, regardless of the time.
-                    <br><br>
-                    Rainy Days was my first (almost) totally self made project, the only part that I didn't make was the music. The biggest struggle that I faced with making an application by myself was having to learn how to do everything, with no one to rely on. This was my first project in Unity, as well as my first project written in C#, so I had to trial/error every part of the project. I learned a lot through this project, including the process of submitting an application to both the Google Play Store and iTunes.
-                  </p><br>
-                  <div class="btn-group btn-group-justified">
-                    <a href="https://itunes.apple.com/us/app/rainy-days-the-game/id1051590281?ls=1&mt=8" target="_blank" class="btn btn-primary">iOS</a>
-                    <a href="https://play.google.com/store/apps/details?id=com.RebeccaAnsems.RainyDays" target="_blank" class="btn btn-primary">Android</a>
-                    <a href="https://github.com/beckymegan/RainyDays" target="_blank" class="btn btn-primary">GitHub</a>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+  <div id="rainydays" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title">Rainy Days</h3>
+        </div>
+        <div class="modal-body">
+          <img src="img/RainyDays.jpg" class=".img-responsive" style="width:100%" alt="Image">
+          <h6>
+            Platforms: Mobile<br>
+            Language: C# - Unity<br>
+            Summer 2015
+          </h6>
+          <br>
+          <p>
+            Nothing ruins a picnic faster than rain clouds and an ant invasion! Help save the picnickers from a ruined day by tapping away the ants and clouds. Features many challenging levels, high replayability, and addictive gameplay. Zero in-app purchases and does not require wifi results in a fun game to play, anywhere. Regular updates keeps gameplay fresh and new, it’s a new adventure every time you play!
+            <br><br>
+            Rainy Days is a simple one tap game where players have to quickly tap away clouds (the longer the clouds are on screen the lower the score) while also tapping away ants (if the ants get to the picnic basket the player loses health). Successfully tapping away a cloud or ant increases the player's score by one. Once a certain score is reached, dependent on the level, the level is medalled and the next level is unlocked. Gold medal if the player reaches the required score, with full health and under the time limit (which changes dependent on the level), silver medal if the player reaches the required score with full health but over the time limit, and bronze medal if the player finishes with less than full health, regardless of the time.
+            <br><br>
+            Rainy Days was my first (almost) totally self made project, the only part that I didn't make was the music. The biggest struggle that I faced with making an application by myself was having to learn how to do everything, with no one to rely on. This was my first project in Unity, as well as my first project written in C#, so I had to trial/error every part of the project. I learned a lot through this project, including the process of submitting an application to both the Google Play Store and iTunes.
+          </p><br>
+          <div class="btn-group btn-group-justified">
+            <a href="https://itunes.apple.com/us/app/rainy-days-the-game/id1051590281?ls=1&mt=8" target="_blank" class="btn btn-primary">iOS</a>
+            <a href="https://play.google.com/store/apps/details?id=com.RebeccaAnsems.RainyDays" target="_blank" class="btn btn-primary">Android</a>
+            <a href="https://github.com/beckymegan/RainyDays" target="_blank" class="btn btn-primary">GitHub</a>
           </div>
-
-          <div id="projecttowerhogg" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h3 class="modal-title">#ProjectTowerHogg</h3>
-                </div>
-                <div class="modal-body">
-                  <img src="img/ProjectTowerHogg.jpg" class=".img-responsive" style="width:100%" alt="Image">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat ante at tortor elementum, at ornare lacus semper. Integer ultrices volutpat urna, eu tempus sem dapibus ut. Fusce vulputate ante quis maximus efficitur. Fusce ut lorem egestas, aliquam enim sit amet, ullamcorper nisl. Phasellus eget luctus mi, nec dapibus augue. Suspendisse aliquet est orci, in finibus leo pharetra in. Etiam sollicitudin urna nec hendrerit ultrices. Pellentesque volutpat, neque eu tempus laoreet, sem mauris luctus elit, id suscipit nulla sapien sed justo. Nunc non arcu dapibus, fermentum augue non, venenatis mauris. Nullam dolor ligula, aliquet vel libero ultrices, feugiat molestie felis. Sed vel ullamcorper neque, vel laoreet ex. Mauris interdum enim malesuada turpis volutpat egestas. Nam cursus pulvinar nunc eget mattis.</p><br>
-                  <p>Itch.io || GitHub</p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="projecttowerhogg" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title">#ProjectTowerHogg</h3>
+        </div>
+        <div class="modal-body">
+          <img src="img/ProjectTowerHogg.jpg" class=".img-responsive" style="width:100%" alt="Image">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat ante at tortor elementum, at ornare lacus semper. Integer ultrices volutpat urna, eu tempus sem dapibus ut. Fusce vulputate ante quis maximus efficitur. Fusce ut lorem egestas, aliquam enim sit amet, ullamcorper nisl. Phasellus eget luctus mi, nec dapibus augue. Suspendisse aliquet est orci, in finibus leo pharetra in. Etiam sollicitudin urna nec hendrerit ultrices. Pellentesque volutpat, neque eu tempus laoreet, sem mauris luctus elit, id suscipit nulla sapien sed justo. Nunc non arcu dapibus, fermentum augue non, venenatis mauris. Nullam dolor ligula, aliquet vel libero ultrices, feugiat molestie felis. Sed vel ullamcorper neque, vel laoreet ex. Mauris interdum enim malesuada turpis volutpat egestas. Nam cursus pulvinar nunc eget mattis.</p><br>
+          <p>Itch.io || GitHub</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
-          <div class="container-fluid text-center" id="contact">
-            <h2>Contact Me</h2>
-            <div class="col-sm-1"></div>
-            <div class="col-sm-5">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27005.662559238335!2d-63.61017245829087!3d44.645670663008275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b5a211407dbfac1%3A0x666be3a6438b2ddc!2sHalifax%2C+NS!5e0!3m2!1sen!2sca!4v1450639404531" style="width:100%" frameborder="0" style="border:0" class="img-responsive"></iframe>
-            </div>
-            <div class="col-sm-5">
-              <h6>
-                Rebecca Ansems<br>
-                rebecca.ansems@gmail.com<br>
-                902-670-9064</h6>
-                <h6 id="small">Social Media</h6>
-                <div class="btn-group btn-group-justified">
-                  <a href="http://onegirlsomegames.tumblr.com/" target="_blank" class="btn btn-primary">Blog</a>
-                  <a href="https://github.com/beckymegan" target="_blank" class="btn btn-primary">GitHub</a>
-                  <a href="https://twitter.com/BeckyAnsems" target="_blank" class="btn btn-primary">Twitter</a>
-                  <a href="https://www.facebook.com/ansemsrk" target="_blank" class="btn btn-primary">Facebook</a>
-                </div>
-              </div>
-            </div>
-            <footer class="container-fluid text-center" id="footer">
-              <p>Footer Text</p>
-            </footer>
+  <div class="container-fluid text-center" id="contact">
+    <h2>Contact Me</h2>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-5">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27005.662559238335!2d-63.61017245829087!3d44.645670663008275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b5a211407dbfac1%3A0x666be3a6438b2ddc!2sHalifax%2C+NS!5e0!3m2!1sen!2sca!4v1450639404531" style="width:100%" frameborder="0" style="border:0" class="img-responsive"></iframe>
+    </div>
+    <div class="col-sm-5">
+      <h6>
+        Rebecca Ansems<br>
+        rebecca.ansems@gmail.com<br>
+        902-670-9064
+      </h6>
+      <h6 id="small">Links</h6>
+      <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+          <div class="social">
+            <a href="mailto:rebecca.ansems@gmail.com" title="rebecca.ansems@gmail.com" style="left: 0%; right: 80%">
+              <i class="zmdi zmdi-email"></i>
+            </a>
+            <a href="https://github.com/beckymegan" title="github.com/beckymegan" style="left: 20%; right: 60%">
+              <i class="zmdi zmdi-github-alt"></i>
+            </a>
+            <a href="http://onegirlsomegames.tumblr.com/" title="http://onegirlsomegames.tumblr.com/" style="left: 40%; right: 40%">
+              <i class="zmdi zmdi-tumblr"></i>
+            </a>
+            <a href="https://www.facebook.com/ansemsrk" title="https://www.facebook.com/ansemsrk" style="left: 60%; right: 20%">
+              <i class="zmdi zmdi-facebook"></i>
+            </a>
+            <a href="https://twitter.com/BeckyAnsems" title="https://twitter.com/BeckyAnsems" style="left: 80%; right: 0%">
+              <i class="zmdi zmdi-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
 
-          </body>
-          </html>
+      <br><br>
+    </div>
+  </div>
+</body>
+</html>
