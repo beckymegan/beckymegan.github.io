@@ -46,6 +46,7 @@
         <ul class="nav navbar-nav">
           <li class="active"><a href="#home">Home</a></li>
           <li><a href="#intro">Introducton</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -67,7 +68,7 @@
     <h2>Introduction</h2><br>
     <div class="col-sm-4"></div>
     <div class="col-sm-4">
-      <img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+      <img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image" id="profile">
     </div>
   </div>
 
@@ -80,6 +81,31 @@
     </div>
   </div>
 
+  <div class="container-fluid text-center" id="skills">
+    <h2>Skills</h2>
+    <div class="col-sm-2"></div>
+    <div class="col-sm-4">
+      <h3>Technical Skills</h3>
+      <p>
+        Intermediate knowledge of Java and C#.<br>
+        Intermediate knowledge of Unity 5 and Unreal Engine 4.<br>
+        Basic knowledge of HTML and CSS.<br>
+        Proficient in Microsoft Word, Microsoft PowerPoint, and Microsoft Excel.<br>
+        Proficient in Adobe CS5 Photoshop, and Premiere Pro.<br>
+        Experience using both Microsoft- and Mac-based computer platforms.<br>
+      </p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Non-Technical Skills</h3>
+      <p>
+        Leadership skills gained from Women in Technology Society (WiTS) as vice-president of social events.<br>
+        Patience and communication skills gained from my previous job at Glow Parties and leadership roles at WiTS.<br>
+        Self-motivation skills gained from the full creation and release of my own one-person studio games for iOS and Android systems.<br>
+      </p>
+    </div>
+    <div class="col-sm-12">
+    <h3>Download Resume</h3></div>
+  </div>
 
   <div class="container-fluid text-center" id="projects">    
     <h2>Projects</h2>
@@ -135,7 +161,7 @@
                     Magic solves the puzzles by creating a 2D array with the user inputted data. Magic then checks for row, column, and box conflicts, returning true boolean if there is a conflict. Magic continues to run through different combinations of numbers (for the spots that the user did not input a number) until a set of numbers is found which does not return true for any of the conflict checks. Next Magic checks to see if there are any more sets of numbers that could result in a solution, if there is another set of numbers that could also be a solution then Magic warns the user that the solution shown may not be the only solution possible.
                     <br><br>
                     Jacob and I worked on the algorithms/checks used to determine if there is a conflict among the row/column/box, I specifically spent a lot of time researching about the different ways of solving different types of Sudoku puzzles, and then converting those strategies to code. I also helped Joe on parts of the GUI, specifically helping to differentiate the known numbers with the numbers the user entered to check.
-                    </p><br>
+                  </p><br>
                   <div class="btn-group btn-group-justified">
                     <a href="http://www.mediafire.com/download/qf6agwo3mb7tvkm/Sudoku_Solver.jar" target="_blank" class="btn btn-primary">Download</a>
                     <a href="https://github.com/beckymegan/SudokuHackathon2014" target="_blank" class="btn btn-primary">GitHub</a>
@@ -170,7 +196,7 @@
                     The AI for the opponent works by selecting a random square, stored on a 2D array, that is on the "checkerboard" (A1, A3, A5, A7, B2, B4, B6, B8, C1, C3...) and if the AI recieves the boolean that a ship was not hit, eg a grey space, then the AI will select another, different, square that resides on the "checkerboard" on it's next turn. However, if the AI recieves the boolean that a ship was hit, eg a red space, then the AI will select a space directly above, below, left or right, of the current space. If the second space selected is a miss, grey, then on the following turn the AI will then select directly above, below, left or right, excluding whichever option was chosen before. The AI will continue doing this until all directions have been chosen and no longer has any other options, the AI will then continue selecting random locations (in the "checkerboard" pattern). However, if the second space selected is a hit as well the AI will continue in that direction until it hits a miss, grey space, then the AI will continue with checking the space directly above/below/left/right like if the space had been a miss.
                     <br><br>
                     I made the entire AI for the battleship game by first researching optimum battleship stradegies, and then converting those techniques into code. Pascha and I worked together on the GUI, working closely with the Netbeans IDE and it's built in UI system. The biggest challenge with Battleship was getting all elements working together, the UI, the AI, and the player.
-                    </p><br>
+                  </p><br>
                   <div class="btn-group btn-group-justified">
                     <a href="http://www.mediafire.com/download/la39x79x1t0gg46/Battleship.jar" target="_blank" class="btn btn-primary">Download</a>
                     <a href="https://github.com/matt24smith/Battleship" target="_blank" class="btn btn-primary">GitHub</a>
@@ -183,7 +209,7 @@
             </div>
           </div>
 
-          <div id="rainyDays" class="modal fade" role="dialog">
+          <div id="rainydays" class="modal fade" role="dialog">
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
@@ -192,17 +218,33 @@
                 </div>
                 <div class="modal-body">
                   <img src="img/RainyDays.jpg" class=".img-responsive" style="width:100%" alt="Image">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat ante at tortor elementum, at ornare lacus semper. Integer ultrices volutpat urna, eu tempus sem dapibus ut. Fusce vulputate ante quis maximus efficitur. Fusce ut lorem egestas, aliquam enim sit amet, ullamcorper nisl. Phasellus eget luctus mi, nec dapibus augue. Suspendisse aliquet est orci, in finibus leo pharetra in. Etiam sollicitudin urna nec hendrerit ultrices. Pellentesque volutpat, neque eu tempus laoreet, sem mauris luctus elit, id suscipit nulla sapien sed justo. Nunc non arcu dapibus, fermentum augue non, venenatis mauris. Nullam dolor ligula, aliquet vel libero ultrices, feugiat molestie felis. Sed vel ullamcorper neque, vel laoreet ex. Mauris interdum enim malesuada turpis volutpat egestas. Nam cursus pulvinar nunc eget mattis.</p><br>
-                  <p>iPhone || Android || GitHub</p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <h6>
+                    Platforms: Mobile<br>
+                    Language: C# - Unity<br>
+                    Summer 2015
+                  </h6>
+                  <br>
+                  <p>
+                    Nothing ruins a picnic faster than rain clouds and an ant invasion! Help save the picnickers from a ruined day by tapping away the ants and clouds. Features many challenging levels, high replayability, and addictive gameplay. Zero in-app purchases and does not require wifi results in a fun game to play, anywhere. Regular updates keeps gameplay fresh and new, it’s a new adventure every time you play!
+                    <br><br>
+                    Rainy Days is a simple one tap game where players have to quickly tap away clouds (the longer the clouds are on screen the lower the score) while also tapping away ants (if the ants get to the picnic basket the player loses health). Successfully tapping away a cloud or ant increases the player's score by one. Once a certain score is reached, dependent on the level, the level is medalled and the next level is unlocked. Gold medal if the player reaches the required score, with full health and under the time limit (which changes dependent on the level), silver medal if the player reaches the required score with full health but over the time limit, and bronze medal if the player finishes with less than full health, regardless of the time.
+                    <br><br>
+                    Rainy Days was my first (almost) totally self made project, the only part that I didn't make was the music. The biggest struggle that I faced with making an application by myself was having to learn how to do everything, with no one to rely on. This was my first project in Unity, as well as my first project written in C#, so I had to trial/error every part of the project. I learned a lot through this project, including the process of submitting an application to both the Google Play Store and iTunes.
+                  </p><br>
+                  <div class="btn-group btn-group-justified">
+                    <a href="https://itunes.apple.com/us/app/rainy-days-the-game/id1051590281?ls=1&mt=8" target="_blank" class="btn btn-primary">iOS</a>
+                    <a href="https://play.google.com/store/apps/details?id=com.RebeccaAnsems.RainyDays" target="_blank" class="btn btn-primary">Android</a>
+                    <a href="https://github.com/beckymegan/RainyDays" target="_blank" class="btn btn-primary">GitHub</a>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div id="projectTowerhogg" class="modal fade" role="dialog">
+          <div id="projecttowerhogg" class="modal fade" role="dialog">
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
@@ -233,18 +275,18 @@
                 Rebecca Ansems<br>
                 rebecca.ansems@gmail.com<br>
                 902-670-9064</h6>
-                <p id="small">Social Media</p>
+                <h6 id="small">Social Media</h6>
                 <div class="btn-group btn-group-justified">
-                    <a href="http://onegirlsomegames.tumblr.com/" target="_blank" class="btn btn-primary">Blog</a>
-                    <a href="https://github.com/beckymegan" target="_blank" class="btn btn-primary">GitHub</a>
-                    <a href="https://twitter.com/BeckyAnsems" target="_blank" class="btn btn-primary">Twitter</a>
-                    <a href="https://www.facebook.com/ansemsrk" target="_blank" class="btn btn-primary">Facebook</a>
-                  </div>
+                  <a href="http://onegirlsomegames.tumblr.com/" target="_blank" class="btn btn-primary">Blog</a>
+                  <a href="https://github.com/beckymegan" target="_blank" class="btn btn-primary">GitHub</a>
+                  <a href="https://twitter.com/BeckyAnsems" target="_blank" class="btn btn-primary">Twitter</a>
+                  <a href="https://www.facebook.com/ansemsrk" target="_blank" class="btn btn-primary">Facebook</a>
+                </div>
+              </div>
             </div>
-          </div>
-          <footer class="container-fluid text-center" id="footer">
-            <p>Footer Text</p>
-          </footer>
+            <footer class="container-fluid text-center" id="footer">
+              <p>Footer Text</p>
+            </footer>
 
-        </body>
-        </html>
+          </body>
+          </html>
