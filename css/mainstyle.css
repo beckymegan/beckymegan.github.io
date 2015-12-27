@@ -30,6 +30,40 @@
 	border-color: #1c5982;
 }
 
+.social {
+  height: 2em;
+  text-align: center;
+}
+
+.social a {
+  position: absolute;
+  padding: 0.1em;
+  -webkit-transition: color 300ms ease-in-out;
+  transition: color 300ms ease-out;
+
+  background-color: inherit;
+  -webkit-transition: background-color 300ms ease-in-out;
+  transition: background-color 300ms ease-in-out;
+}
+
+.social a:hover, .social a:hover div{
+  text-decoration: none;
+  background-color: #2980b9;
+  color: #2B2B2B;
+  -webkit-transition: color 300ms ease-in-out;
+  transition: color 300ms ease-in-out;
+}
+
+.social i {
+  font-size: 3em;
+}
+
+.social div {
+  margin-top: 3px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
 #links {
 	background-color: #2980b9;
 }
@@ -53,6 +87,10 @@
 	padding-bottom: 2em;
 }
 
+#skills {
+	text-align: justify;
+}
+
 #profile {
 	padding-bottom: 1em;
 	border-width: 0em;
@@ -60,7 +98,15 @@
 
 #small {
 	line-height: 1em;
-	font-size: 1.15em;
+	font-size: 1em;
+}
+
+#resume {
+	color: #F6F6F6;
+}
+
+#resume:hover{
+	color: #2980b9;	
 }
 
 #modal-button:hover {
@@ -103,14 +149,6 @@ p {
 	font-size: 1.2em;
 }
 
-a {
-	color: #2980b9;
-}
-
-a:hover {
-	color: #2980b9;
-}
-
 img {
 	border-style: solid;
 	border-width: 0.5em;
@@ -150,44 +188,4 @@ h4::selection, h1::selection {
 h4::-moz-selection, h1::-moz-selection{ /* Code for Firefox */
 	color: #F6F6F6;
 	background: #2980b9;
-}
-
-
-
-
-
-
-
-.social {
-  height: 2em;
-  text-align: center;
-}
-
-.social a {
-  position: absolute;
-  padding: 0.1em;
-  -webkit-transition: color 300ms ease-in-out;
-  transition: color 300ms ease-out;
-
-  background-color: inherit;
-  -webkit-transition: background-color 300ms ease-in-out;
-  transition: background-color 300ms ease-in-out;
-}
-
-.social a:hover, .social a:hover div{
-  text-decoration: none;
-  background-color: #2980b9;
-  color: #2B2B2B;
-  -webkit-transition: color 300ms ease-in-out;
-  transition: color 300ms ease-in-out;
-}
-
-.social i {
-  font-size: 3em;
-}
-
-.social div {
-  margin-top: 3px;
-  font-weight: 400;
-  font-size: 16px;
 }
