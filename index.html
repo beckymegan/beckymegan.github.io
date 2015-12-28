@@ -21,7 +21,7 @@
           target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
           if (target.length) {
             $('html,body').animate({
-              scrollTop: target.offset().top
+              scrollTop: target.offset().top-50
             }, 1000);
             return false;
           }
@@ -31,7 +31,7 @@
   </script>
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="20">
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
@@ -60,7 +60,7 @@
       <br>
       <h1 class="home">Rebecca Ansems</h1>      
       <h4 class="home">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce congue neque dictum sem bibendum commodo. Fusce facilisis at neque varius porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus orci at dui ullamcorper, ut placerat orci facilisis.
+        Computer Science Student & Software Developer
       </h4><br>
     </div>
   </div>
@@ -69,7 +69,7 @@
     <h2>Introduction</h2><br>
     <div class="col-sm-4"></div>
     <div class="col-sm-4">
-      <img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image" id="profile">
+      <img src="img/profile.jpg" class="img-responsive" style="width:100%" alt="Image" id="profile">
     </div>
   </div>
 
@@ -77,7 +77,7 @@
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce congue neque dictum sem bibendum commodo. Fusce facilisis at neque varius porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus orci at dui ullamcorper, ut placerat orci facilisis. Proin ex ex, imperdiet ut pharetra eget, auctor nec sem. Quisque vel dui elementum, mollis justo et, venenatis neque. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam elit erat, dignissim nec nulla vel, ultricies consectetur est. Duis accumsan porta facilisis. Nulla risus augue, eleifend volutpat pretium ut, venenatis eget lorem.<br><br>
+        Hi! I'm Rebecca Ansems, I'm currently in my second year of my Bachelor of Computer Science at Dalhousie University in Halifax, Nova Scotia. I'll be available for work, co-op, this summer (summer 2016). I got my start programming through making impossibly difficult platformers in Game Maker in my early pre-teens, and competing in LEGO Mindstorms competitions. Currently I'm learning how to code in Java and C through various university classes, and C# and HTML/CSS in my free time.<br><br>
       </p>
     </div>
   </div>
@@ -89,20 +89,20 @@
       <div class="col-sm-4">
         <h3>Technical Skills</h3>
         <p>
-          ◦  Intermediate knowledge of Java and C#.<br>
-          ◦  Intermediate knowledge of Unity 5 and Unreal Engine 4.<br>
-          ◦  Basic knowledge of HTML and CSS.<br>
-          ◦  Proficient in Microsoft Word, Microsoft PowerPoint, and Microsoft Excel.<br>
-          ◦  Proficient in Adobe CS5 Photoshop, and Premiere Pro.<br>
-          ◦  Experience using both Microsoft- and Mac-based computer platforms.<br>
+          ◦ Intermediate knowledge of Java and C#.<br>
+          ◦ Intermediate knowledge of Unity 5 and Unreal Engine 4.<br>
+          ◦ Basic knowledge of HTML and CSS.<br>
+          ◦ Proficient in Microsoft Word, PowerPoint, and Excel.<br>
+          ◦ Proficient in Adobe CS5 Photoshop and Premiere Pro.<br>
+          ◦ Experience using both Microsoft- and Mac-based computer platforms.<br>
         </p>
       </div>
       <div class="col-sm-4">
         <h3>Non-Technical Skills</h3>
         <p>
-          ◦  Leadership skills gained from Women in Technology Society (WiTS) as vice-president of social events.<br>
-          ◦  Patience and communication skills gained from my previous job at Glow Parties and leadership roles at WiTS.<br>
-          ◦  Self-motivation skills gained from the creation and release of my own one-person games for iOS, Android, and Windows systems.<br>
+          ◦ Leadership skills gained from Women in Technology Society (WiTS) as vice-president of social events.<br>
+          ◦ Patience and communication skills gained from my previous job at Glow Parties and leadership roles at WiTS.<br>
+          ◦ Self-motivation skills gained from the creation and release of my own one-person games for iOS, Android, and Windows systems.<br>
         </p>
       </div>
     </div>
@@ -171,7 +171,7 @@
             Jacob and I worked on the algorithms/checks used to determine if there is a conflict among the row/column/box, I specifically spent a lot of time researching about the different ways of solving different types of Sudoku puzzles, and then converting those strategies to code. I also helped Joe on parts of the GUI, specifically helping to differentiate the known numbers with the numbers the user entered to check.
           </p><br>
           <div class="btn-group btn-group-justified">
-            <a href="http://www.mediafire.com/download/wnw68b3ri8by5qw/ProjectTowerHogg_WIP.exe" target="_blank" class="btn btn-primary">Download</a>
+            <a href="http://www.mediafire.com/download/qf6agwo3mb7tvkm/Magic+-+Sudoku+Solver.jar" target="_blank" class="btn btn-primary">Download</a>
             <a href="https://github.com/beckymegan/SudokuHackathon2014" target="_blank" class="btn btn-primary">GitHub</a>
           </div>
           <div class="modal-footer">
@@ -269,14 +269,14 @@
           </h6>
           <br>
           <p>
-            #ProjectTowerHogg is my latest, currently work in progress, local multiplayer, couch co-op, game. #ProjectTowerHogg allows for up to four players, one keyboard and three controllers, to all play together on a single screen, no split screen required. The goal of #ProjectTowerHogg is to be the last man standing where each successful rocket hit dropping a player's health by one. The catch? Each player only has one rocket so if the player misses an opponent they have to run over and pick up their rocket before shooting again. THis keeps tension high as well as encouraging players to think before they shoot.
+            #ProjectTowerHogg is my latest, currently work in progress, local multiplayer, couch co-op, game. #ProjectTowerHogg allows for up to four players, one keyboard and three controllers, to all play together on a single screen (no split screen required). The goal of #ProjectTowerHogg is to be the last man standing where each successful rocket hit dropping a player's health by one. The catch? Each player only has one rocket so if the player misses an opponent they have to run over and pick up their rocket before shooting again. THis keeps tension high as well as encouraging players to think before they shoot.
             <br><br>
-            The biggest challenges with #ProjectTowerHogg so far are dealing with how Unity/#ProjectTowerHogg deals with controllers, specifically Xbox 360 controllers, and general balancing. Since #ProjectTowerHogg is my first game that utilizes controllers, as well as my first multiplayer (albeit local multiplayer) game. I have discovered that Unity, and therefore #ProjectTowerHogg, has a very interesting way of dealing with controllers - specifically how they deal with axises (thumbsticks). This has not caused many issues in game when the player is moving around, however, this has caused numerous issues with moving between options in level select screens (the "cursor" movesG too fast). General balancing has been an issue simply because games are hard to balance, especially when dealing with up to four different, very human, players. This can cause interesting issues when doing play testing and discovering how different players play #ProjectTowerHogg.
+            The biggest challenges with #ProjectTowerHogg so far are dealing with how Unity/#ProjectTowerHogg deals with controllers, specifically Xbox 360 controllers, and general balancing. Since #ProjectTowerHogg is my first game that utilizes controllers, as well as my first multiplayer (albeit local multiplayer) game. I have discovered that Unity, and therefore #ProjectTowerHogg, has a very interesting way of dealing with controllers - specifically how they deal with axises (thumbsticks). This has not caused many issues in game when the player is moving around, however, this has caused numerous issues with moving between options in level select screens (the "cursor" moves too fast). General balancing has been an issue simply because games are hard to balance, especially when dealing with up to four different, very human, players. This can cause interesting issues when doing play testing and discovering how different players play #ProjectTowerHogg.
             <br><br>
             For #ProjectTowerHogg I have done all the coding, excluding the player controller, as well as some graphic modifications. Most graphical assets and musical assets have been acquired from various other sources. #ProjectTowerHogg, although still being a work in progress, has already taught me how controllers work in Unity, how to work with multiplayer games, and how to "move" characters about. Since previously all of my applications had involved either tapping the screen (RainyDays) or clicking buttons (Magic and Battleship) having to move a character around is a very new experience.
           </p><br>
           <div class="btn-group btn-group-justified">
-            <a href="http://www.mediafire.com/download/la39x79x1t0gg46/Battleship.jar" target="_blank" class="btn btn-primary">Latest Download</a>
+            <a href="http://www.mediafire.com/download/la39x79x1t0gg46/Battleship.jar" target="_blank" class="btn btn-primary">Download</a>
             <a href="https://github.com/beckymegan/ProjectTowerHogg" target="_blank" class="btn btn-primary">GitHub</a>
             <a href="http://www.onegirlsomegames.tumblr.com/tagged/ProjectTowerHogg" target="_blank" class="btn btn-primary">Blog</a>
           </div>
