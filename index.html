@@ -7,352 +7,392 @@ I also got the Javascript code for the scrolling animation from CSStricks.com. -
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Rebecca Ansems | Portfolio </title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href='https://fonts.googleapis.com/css?family=Oswald:700,300|Open+Sans' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/mainstyle.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<title>Rebecca Ansems | Portfolio </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://fonts.googleapis.com/css?family=Oswald:700,300|Open+Sans' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/mainstyle.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-  <!-- Smooth scroll */ -->
-  <script>
-    $(function() {
-      $('a[href*=#]:not([href=#])').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	<!-- Smooth scroll */ -->
+	<script>
+		$(function() {
+			$('a[href*=#]:not([href=#])').click(function() {
+				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-          if (target.length) {
-            $('html,body').animate({
-              scrollTop: target.offset().top-50
-            }, 1000);
-            return false;
-          }
-        }
-      });
-    });
-  </script>
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+					if (target.length) {
+						$('html,body').animate({
+							scrollTop: target.offset().top-50
+						}, 1000);
+						return false;
+					}
+				}
+			});
+		});
+	</script>
 
-  <!-- Google Analytics -->
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-72725613-1', 'auto');
-  ga('send', 'pageview');
+		ga('create', 'UA-72725613-1', 'auto');
+		ga('send', 'pageview');
 
-</script>
+	</script>
 
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>                        
-        </button>
-        <a class="navbar-brand" href="#">Portfolio</a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#home">Home</a></li>
-          <li><a href="#intro">Introducton</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+				</button>
+				<a class="navbar-brand" href="#">Rebecca</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#home">Home</a></li>
+					<li><a href="#intro">Introducton</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 
-  <div class="jumbotron" id="home">
-    <div class="container text-center">
-      <br>
-      <h1 class="home">Rebecca Ansems</h1>      
-      <h4 class="home">
-        Computer Science Student & Software Developer
-      </h4><br>
-    </div>
-  </div>
+	<div class="jumbotron" id="home">
+		<div class="container text-center">
+			<br>
+			<h1 class="home">Rebecca Ansems</h1>      
+			<h4 class="home">
+				Computer Science Student & Software Developer
+			</h4><br>
+		</div>
+	</div>
 
-  <div class="container-fluid text-center" id="intro">
-    <h2>Introduction</h2><br>
-    <div class="col-sm-4"></div>
-    <div class="col-sm-4">
-      <img src="img/profile.jpg" class="img-responsive" style="width:100%" alt="Image" id="profile">
-    </div>
-  </div>
+	<div class="container-fluid text-center" id="intro">
+		<h2>Introduction</h2><br>
+		<div class="col-sm-4"></div>
+		<div class="col-sm-4">
+			<img src="img/profile.jpg" class="img-responsive" style="width:100%" alt="Image" id="profile">
+		</div>
+	</div>
 
-  <div class="container-fluid text-center" id="intro">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-      <p>
-        Hi! I'm Rebecca Ansems, I'm currently a student in my third year of my Bachelor of Computer Science degree at <a href="http://www.dal.ca/" target="_blank">Dalhousie University</a> in Halifax, Nova Scotia. I'll be available for my second co-op term this Winter (January 2017). <br>
-        I got my start programming through making impossibly difficult platformers in Game Maker in my early pre-teens, and competing in LEGO Mindstorms competitions. Currently I'm learning how to code in Java & C through various university classes, and C# in my free time.<br><br>
-      </p>
-    </div>
-  </div>
+	<div class="container-fluid text-center" id="intro">
+		<div class="col-sm-3"></div>
+		<div class="col-sm-6">
+			<p>
+				Hi! I'm Rebecca Ansems, I'm currently a student in my third year of my Bachelor of Computer Science degree at <a href="http://www.dal.ca/" target="_blank">Dalhousie University</a> in Halifax, Nova Scotia. I'll be available for my second co-op term this Winter (January 2017). <br>
+				I got my start programming through making impossibly difficult platformers in Game Maker in my early pre-teens, and competing in LEGO Mindstorms competitions. Currently I'm learning how to code in Java & C through various university classes, and C# in my free time.<br><br>
+			</p>
+		</div>
+	</div>
 
-  <div class="container-fluid text-center" id="skills">
-    <div class="row">
-      <h2>Skills</h2>
-      <div class="col-sm-2"></div>
-      <div class="col-sm-4">
-        <h3>Technical Skills</h3>
-        <p>
-          ◦ Professional knowledge of Java and C#.<br>
-          ◦ Professional knowledge of Unity 5.<br>
-          ◦ Academic knowledge of HTML, CSS, Python, C++, and C.<br>
-          ◦ Proficient in Adobe CS5 Photoshop and Premiere Pro.<br>
-          ◦ Professional experience using version controls software Git and Perforce.<br>
-          ◦ Completed courses related to databases, algorithms, and witchcraft.<br>
-        </p>
-      </div>
-      <div class="col-sm-4">
-        <h3>Non-Technical Skills</h3>
-        <p>
-          ◦ Leadership skills gained from Women in Technology Society (WiTS) as vice-president of social events.<br>
-          ◦ Patience and communication skills gained from my previous job at Glow Parties and leadership roles at WiTS.<br>
-          ◦ Various skills gained from the creation and release of my applications for iOS, Android, and Windows systems.<br>
-        </p>
-      </div>
-    </div>
-    <div class="col-sm-5"></div>
-    <div class="col-sm-2"><a href="txt/Rebecca Ansems Resume.pdf" target="_blank"><h3 id="resume">Download Resume</h3></a></div>
-  </div>
+	<div class="container-fluid text-center" id="skills">
+		<div class="row">
+			<h2>Skills</h2>
+			<div class="col-sm-2"></div>
+			<div class="col-sm-4">
+				<h3>Technical Skills</h3>
+				<p>
+					◦ Professional knowledge of Java and C#.<br>
+					◦ Professional knowledge of Unity 5.<br>
+					◦ Academic knowledge of HTML, CSS, Python, C++, and C.<br>
+					◦ Proficient in Adobe CS5 Photoshop and Premiere Pro.<br>
+					◦ Professional experience using version controls software Git and Perforce.<br>
+					◦ Completed courses related to databases, algorithms, and witchcraft.<br>
+				</p>
+			</div>
+			<div class="col-sm-4">
+				<h3>Non-Technical Skills</h3>
+				<p>
+					◦ Leadership skills gained from Women in Technology Society (WiTS) as vice-president of social events.<br>
+					◦ Patience and communication skills gained from my previous job at Glow Parties and leadership roles at WiTS.<br>
+					◦ Various skills gained from the creation and release of my applications for iOS, Android, and Windows systems.<br>
+				</p>
+			</div>
+		</div>
+		<div class="col-sm-5"></div>
+		<div class="col-sm-2"><a href="txt/Rebecca Ansems Resume.pdf" target="_blank"><h3 id="resume">Download Resume</h3></a></div>
+	</div>
 
-  <div class="container-fluid text-center" id="projects">    
-    <h2>Projects</h2>
-    <div class="row">
-      <div class="col-sm-3"></div>
+	<div class="container-fluid text-center" id="projects">    
+		<h2>Projects</h2>
+		<div class="row">
+			<div class="col-sm-3"></div>
 
-      <div class="col-sm-3">
-        <h3>Magic - Sudoku Solver</h3>
-        <a data-toggle="modal" data-target="#sudoku" id="modal-button">
-          <img src="img/SudokuSolver.jpg" class=".img-responsive" style="width:100%" alt="Image">
-        </a>
-      </div>
-      <div class="col-sm-3">
-        <h3>Battleship</h3>
-        <a data-toggle="modal" data-target="#battleship" id="modal-button">
-          <img src="img/Battleship.jpg" class=".img-responsive" style="width:100%" alt="Image">
-        </a>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-3"></div>
-      <div class="col-sm-3">
-        <h3>Rainy Days</h3>
-        <a data-toggle="modal" data-target="#rainydays" id="modal-button">
-          <img src="img/IcRainyDays.jpg" class=".img-responsive" style="width:100%" alt="Image">
-        </a>
-      </div>
+			<div class="col-sm-3">
+				<h3>Magic - Sudoku Solver</h3>
+				<a data-toggle="modal" data-target="#sudoku" id="modal-button">
+					<img src="img/SudokuSolver.jpg" class=".img-responsive" style="width:100%" alt="Image">
+				</a>
+			</div>
+			<div class="col-sm-3">
+				<h3>Battleship</h3>
+				<a data-toggle="modal" data-target="#battleship" id="modal-button">
+					<img src="img/Battleship.jpg" class=".img-responsive" style="width:100%" alt="Image">
+				</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-3"></div>
+			<div class="col-sm-3">
+				<h3>Rainy Days</h3>
+				<a data-toggle="modal" data-target="#rainydays" id="modal-button">
+					<img src="img/IcRainyDays.jpg" class=".img-responsive" style="width:100%" alt="Image">
+				</a>
+			</div>
 
-      <div class="col-sm-3">
-        <h3>Alieball</h3>
-        <a data-toggle="modal" data-target="#alieball" id="modal-button">
-          <img src="img/IcAlieball.jpg" class=".img-responsive" style="width:100%" alt="Image">
-        </a>
-      </div>
-    </div>
-  </div>
+			<div class="col-sm-3">
+				<h3>Alieball</h3>
+				<a data-toggle="modal" data-target="#alieball" id="modal-button">
+					<img src="img/IcAlieball.jpg" class=".img-responsive" style="width:100%" alt="Image">
+				</a>
+			</div>
+		</div>
+	</div>
 
-  <!-- Modals -->
-  <div id="sudoku" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h3 class="modal-title">Magic - Sudoku Solver</h3>
-        </div>
-        <div class="modal-body">
-          <img src="img/SudokuSolver.jpg" class=".img-responsive" style="width:100%" alt="Image">
-          <h6>
-            Platform: Windows<br>
-            Language: Java<br>
-            Team: Jacob Filmore and Joe Nip<br>
-            <a href="http://www.voltaeffect.com/the-megathon-open-hackathon-at-volta/" target="_blank">The Megathon - November 14, 2014</a>
-          </h6>
-          <br>
-          <p>
-            Magic - Sudoku Solver allows users to enter in a Sudoku puzzle, easy (2x2) or hard (3x3), and then either solve the full puzzle outright or enter in other numbers into remaining squares, then check to see if they're right. This allows the user to both find the full solution to the puzzle as well as see if they are correct with their own guesses (without seeing if they're correct about all their guesses, or solving the puzzle entirely).
-            <br><br>
-            Magic solves the puzzles by creating a 2D array with the user inputted data. Magic then checks for row, column, and box conflicts, returning a true boolean if there is a conflict. Magic continues to run through different combinations of numbers (for the spots that the user did not input a number) until a set of numbers is found which does not return true for any of the conflict checks. Next Magic checks to see if there are any more sets of numbers that could result in a solution, if there is another set of numbers that could also be a solution then Magic warns the user that the solution shown may not be the only solution possible.
-            <br><br>
-            Jacob and I worked on the algorithms/checks used to determine if there is a conflict among the row/column/box, I specifically spent a lot of time researching about the different ways of solving different types of Sudoku puzzles, and then converting those strategies to code. I also helped Joe on parts of the GUI, specifically helping to differentiate the known numbers with the numbers the user entered to check.
-          </p><br>
+	<!-- Modals -->
+	<div id="sudoku" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h3 class="modal-title">Magic - Sudoku Solver</h3>
+				</div>
+				<div class="modal-body">
+					<img src="img/SudokuSolver.jpg" class=".img-responsive" style="width:100%" alt="Image">
+					<h6>
+						Platform: Windows<br>
+						Language: Java<br>
+						Team: Jacob Filmore and Joe Nip<br>
+						<a href="http://www.voltaeffect.com/the-megathon-open-hackathon-at-volta/" target="_blank">The Megathon - November 14, 2014</a>
+					</h6>
+					<br>
+					<p>
+						Magic - Sudoku Solver allows users to enter in a Sudoku puzzle, easy (2x2) or hard (3x3), and then either solve the full puzzle outright or enter in other numbers into remaining squares, then check to see if they're right. This allows the user to both find the full solution to the puzzle as well as see if they are correct with their own guesses (without seeing if they're correct about all their guesses, or solving the puzzle entirely).
+						<br><br>
+						Magic solves the puzzles by creating a 2D array with the user inputted data. Magic then checks for row, column, and box conflicts, returning a true boolean if there is a conflict. Magic continues to run through different combinations of numbers (for the spots that the user did not input a number) until a set of numbers is found which does not return true for any of the conflict checks. Next Magic checks to see if there are any more sets of numbers that could result in a solution, if there is another set of numbers that could also be a solution then Magic warns the user that the solution shown may not be the only solution possible.
+						<br><br>
+						Jacob and I worked on the algorithms/checks used to determine if there is a conflict among the row/column/box, I specifically spent a lot of time researching about the different ways of solving different types of Sudoku puzzles, and then converting those strategies to code. I also helped Joe on parts of the GUI, specifically helping to differentiate the known numbers with the numbers the user entered to check.
+					</p><br>
 
-          <div class="btn-group btn-group-justified">
-            <a href="http://www.mediafire.com/download/qf6agwo3mb7tvkm/Magic_-_Sudoku_Solver.jar" target="_blank" class="btn btn-primary">Download</a>
-            <a href="https://github.com/rebeccaansems/SudokuHackathon2014" target="_blank" class="btn btn-primary">GitHub</a>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+					<div class="btn-group btn-group-justified">
+						<a href="http://www.mediafire.com/download/qf6agwo3mb7tvkm/Magic_-_Sudoku_Solver.jar" target="_blank" class="btn btn-primary">Download</a>
+						<a href="https://github.com/rebeccaansems/SudokuHackathon2014" target="_blank" class="btn btn-primary">GitHub</a>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-  <div id="battleship" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h3 class="modal-title">Battleship</h3>
-        </div>
-        <div class="modal-body">
-          <img src="img/Battleship.jpg" class=".img-responsive" style="width:100%" alt="Image">
-          <h6>
-            Platform: Windows<br>
-            Language: Java<br>
-            Team: Pascha Protter, Abdullah Neghaban, and Matthew Smith<br>
-            CSCI 2110 Final Project - April 2014
-          </h6>
-          <br>
-          <p>
-            Battleship is played like the normal battleship board game, the player places three different ships (submarine, destroyer, and aircraft) on a 8x8 grid and after successfully submitting the location of the player's ships the game starts with the player's board on the left and the opponents on the right. The player then takes turns with the AI selecting different squares that they think one of the ships may be on. If the player/AI has hit a ship the block will turn red and "OPPONENT HIT PLAYER SHIP/PLAYER HIT OPPONENT SHIP" will appear in the ships log at the top of the screen. If the player/AI selects a square that doesn't have a ship at that location then the square will turn grey and the battle log will show "OPPONENT MISSED PLAYER SHIP/PLAYER MISSED OPPONENT SHIP". The game continues until the player or the AI hits, "sinks", every one of the other's ships. The game then either displays "YOU WIN" if the player sunk all the AI's ships or "YOU LOSE" if the AI sunk all the player's ships.
-            <br><br>
-            The AI for the opponent works by selecting a random square, stored on a 2D array, that is on the "checkerboard" (A1, A3, A5, A7, B2, B4, B6, B8, C1, C3...) and if the AI recieves the boolean that a ship was not hit, eg a grey space, then the AI will select another, different, square that resides on the "checkerboard" on it's next turn. However, if the AI recieves the boolean that a ship was hit, eg a red space, then the AI will select a space directly above, below, left or right, of the current space. This is dertermined with a random number generator. If the second space selected is a miss, grey, then on the following turn the AI will then select directly above, below, left or right, excluding whichever option was chosen before. The AI will continue doing this until all directions have been chosen and no longer has any other options, the AI will then continue selecting random locations (in the "checkerboard" pattern). However, if the second space selected is a hit as well the AI will continue in that direction until it hits a miss, grey space.
-            <br><br>
-            I made the entire AI for the battleship game by first researching optimum battleship stradegies, and then converting those techniques into code. Pascha and I worked together on the GUI, working closely with the Netbeans IDE and it's built in UI system. The biggest challenge with Battleship was getting all elements working together, the UI, the AI, and the player.
-          </p><br>
-          <div class="btn-group btn-group-justified">
-            <a href="http://www.mediafire.com/download/la39x79x1t0gg46/Battleship.jar" target="_blank" class="btn btn-primary">Download</a>
-            <a href="https://github.com/matt24smith/Battleship" target="_blank" class="btn btn-primary">GitHub</a>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+	<div id="battleship" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h3 class="modal-title">Battleship</h3>
+				</div>
+				<div class="modal-body">
+					<img src="img/Battleship.jpg" class=".img-responsive" style="width:100%" alt="Image">
+					<h6>
+						Platform: Windows<br>
+						Language: Java<br>
+						Team: Pascha Protter, Abdullah Neghaban, and Matthew Smith<br>
+						CSCI 2110 Final Project - April 2014
+					</h6>
+					<br>
+					<p>
+						Battleship is played like the normal battleship board game, the player places three different ships (submarine, destroyer, and aircraft) on a 8x8 grid and after successfully submitting the location of the player's ships the game starts with the player's board on the left and the opponents on the right. The player then takes turns with the AI selecting different squares that they think one of the ships may be on. If the player/AI has hit a ship the block will turn red and "OPPONENT HIT PLAYER SHIP/PLAYER HIT OPPONENT SHIP" will appear in the ships log at the top of the screen. If the player/AI selects a square that doesn't have a ship at that location then the square will turn grey and the battle log will show "OPPONENT MISSED PLAYER SHIP/PLAYER MISSED OPPONENT SHIP". The game continues until the player or the AI hits, "sinks", every one of the other's ships. The game then either displays "YOU WIN" if the player sunk all the AI's ships or "YOU LOSE" if the AI sunk all the player's ships.
+						<br><br>
+						The AI for the opponent works by selecting a random square, stored on a 2D array, that is on the "checkerboard" (A1, A3, A5, A7, B2, B4, B6, B8, C1, C3...) and if the AI recieves the boolean that a ship was not hit, eg a grey space, then the AI will select another, different, square that resides on the "checkerboard" on it's next turn. However, if the AI recieves the boolean that a ship was hit, eg a red space, then the AI will select a space directly above, below, left or right, of the current space. This is dertermined with a random number generator. If the second space selected is a miss, grey, then on the following turn the AI will then select directly above, below, left or right, excluding whichever option was chosen before. The AI will continue doing this until all directions have been chosen and no longer has any other options, the AI will then continue selecting random locations (in the "checkerboard" pattern). However, if the second space selected is a hit as well the AI will continue in that direction until it hits a miss, grey space.
+						<br><br>
+						I made the entire AI for the battleship game by first researching optimum battleship stradegies, and then converting those techniques into code. Pascha and I worked together on the GUI, working closely with the Netbeans IDE and it's built in UI system. The biggest challenge with Battleship was getting all elements working together, the UI, the AI, and the player.
+					</p><br>
+					<div class="btn-group btn-group-justified">
+						<a href="http://www.mediafire.com/download/la39x79x1t0gg46/Battleship.jar" target="_blank" class="btn btn-primary">Download</a>
+						<a href="https://github.com/matt24smith/Battleship" target="_blank" class="btn btn-primary">GitHub</a>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-  <div id="rainydays" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h3 class="modal-title">Rainy Days</h3>
-        </div>
-        <div class="modal-body">
-          <img src="img/RainyDays.jpg" class=".img-responsive" style="width:100%" alt="Image">
-          <h6>
-            Platforms: iOS & Android<br>
-            Language: C# - Unity<br>
-            Summer 2015
-          </h6>
-          <br>
-          <p>
-            <i>Nothing ruins a picnic faster than rain clouds and an ant invasion! Help save the picnickers from a ruined day by tapping away the ants and clouds. Features many challenging levels, high replayability, and addictive gameplay. Zero in-app purchases and does not require wifi results in a fun game to play, anywhere. Regular updates keeps gameplay fresh and new, it’s a new adventure every time you play!</i>
-            <br><br>
-            Rainy Days is a single tap game where players have to quickly tap away clouds (the longer the clouds are on screen the faster the score drops) while also tapping away ants (if the ants get to the picnic basket the player loses health). Successfully tapping away a cloud or ant increases the player's score by one. Once a certain score is reached, dependent on the level, the level is medalled and the next level is unlocked. Gold medal if the player reaches the required score, with full health and under the time challenge, limit (which changes dependent on the level), silver medal if the player reaches the required score with full health but over the time challenge limit, and bronze medal if the player finishes with less than full health, regardless of the time taken to complete.
-            <br><br>
-            Rainy Days was my first (almost) totally self made project, with the music/sound effects being the only thing I didn't make. The biggest struggle that I faced with making an application by myself was having to learn how to do everything, with no one else to rely on. This was my first project in Unity, as well as my first project written in C#, so I had to trial/error every part of the project. I learned a lot through this project, including the process of submitting an application to both the Google Play Store and iTunes.
-          </p><br>
-          <div class="btn-group btn-group-justified">
-            <a href="https://itunes.apple.com/us/app/rainy-days-the-game/id1051590281?ls=1&mt=8" target="_blank" class="btn btn-primary">iOS</a>
-            <a href="https://play.google.com/store/apps/details?id=com.RebeccaAnsems.RainyDays" target="_blank" class="btn btn-primary">Android</a>
-            <a href="http://onegirlsomegames.tumblr.com/tagged/Rainy-Days" target="_blank" class="btn btn-primary">Blog</a>
-            <a href="https://github.com/rebeccaansems/RainyDays" target="_blank" class="btn btn-primary">GitHub</a>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+	<div id="rainydays" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h3 class="modal-title">Rainy Days</h3>
+				</div>
+				<div class="modal-body">
+					<img src="img/RainyDays.jpg" class=".img-responsive" style="width:100%" alt="Image">
+					<h6>
+						Platforms: iOS & Android<br>
+						Language: C# - Unity<br>
+						Summer 2015
+					</h6>
+					<br>
+					<p>
+						<i>Nothing ruins a picnic faster than rain clouds and an ant invasion! Help save the picnickers from a ruined day by tapping away the ants and clouds. Features many challenging levels, high replayability, and addictive gameplay. Zero in-app purchases and does not require wifi results in a fun game to play, anywhere. Regular updates keeps gameplay fresh and new, it’s a new adventure every time you play!</i>
+						<br><br>
+						Rainy Days is a single tap game where players have to quickly tap away clouds (the longer the clouds are on screen the faster the score drops) while also tapping away ants (if the ants get to the picnic basket the player loses health). Successfully tapping away a cloud or ant increases the player's score by one. Once a certain score is reached, dependent on the level, the level is medalled and the next level is unlocked. Gold medal if the player reaches the required score, with full health and under the time challenge, limit (which changes dependent on the level), silver medal if the player reaches the required score with full health but over the time challenge limit, and bronze medal if the player finishes with less than full health, regardless of the time taken to complete.
+						<br><br>
+						Rainy Days was my first (almost) totally self made project, with the music/sound effects being the only thing I didn't make. The biggest struggle that I faced with making an application by myself was having to learn how to do everything, with no one else to rely on. This was my first project in Unity, as well as my first project written in C#, so I had to trial/error every part of the project. I learned a lot through this project, including the process of submitting an application to both the Google Play Store and iTunes.
+					</p><br>
+					<div class="btn-group btn-group-justified">
+						<a href="https://itunes.apple.com/us/app/rainy-days-the-game/id1051590281?ls=1&mt=8" target="_blank" class="btn btn-primary">iOS</a>
+						<a href="https://play.google.com/store/apps/details?id=com.RebeccaAnsems.RainyDays" target="_blank" class="btn btn-primary">Android</a>
+						<a href="http://onegirlsomegames.tumblr.com/tagged/Rainy-Days" target="_blank" class="btn btn-primary">Blog</a>
+						<a href="https://github.com/rebeccaansems/RainyDays" target="_blank" class="btn btn-primary">GitHub</a>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-  <div id="alieball" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h3 class="modal-title">Alieball</h3>
-        </div>
-        <div class="modal-body">
-          <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/VCGRWfC5sUo" frameborder="0" allowfullscreen></iframe>
-          </div>
-          <h6>
-            Platform: Windows<br>
-            Language: C# - Unity<br>
-            Fall, Winter 2015/16
-          </h6>
-          <br>
-          <p>
-            Alieball is a high stress, high fun, local multiplayer, platform based, dodgeball game. Each player chooses a team and competes in either an all out, last team standing battle, or try to knock out as many other players as you can in five minutes (coming soon)!
-            <br>
-            Will your team be able to beat all the rest and come out on top? Invite some friends over, grab your controllers, and prepare to spend the next hour raging as your alien characters are pelted with balls from every direction conceivable in the battle to be the best!
-            <br><br>
-            The biggest challenges with Alieball so far are dealing with how Unity/Alieball deals with controllers, specifically Xbox 360 controllers, and general balancing. Since Alieball is my first game that utilizes controllers, as well as my first multiplayer (albeit local multiplayer) game. I have discovered that Unity, and therefore Alieball, has a very interesting way of dealing with controllers - specifically how they deal with axises (thumbsticks). This has not caused many issues in game when the player is moving around, however, this has caused numerous issues with moving between options in level select screens (the "cursor" moves too fast). General balancing has been an issue because games are hard to balance, especially when dealing with up to four different, very human, players. This can cause interesting issues when doing play testing and discovering how different players play Alieball.
-            <br><br>
-            For Alieball I have done all the coding, excluding the player controller, and also excluding majority of the graphical assets. Alieball, although still being a work in progress, has already taught me how controllers work in Unity, how to work with multiplayer games, and how to "move" characters about. Since previously all of my applications had involved either tapping the screen (RainyDays) or clicking buttons (Magic and Battleship) having to move a character around is a very new experience.
-          </p><br>
-          <div class="btn-group btn-group-justified">
-            <a href="https://rebeccaansems.itch.io/alieball" target="_blank" class="btn btn-primary">Windows</a>
-            <a href="http://onegirlsomegames.tumblr.com/tagged/Alieball" target="_blank" class="btn btn-primary">Blog</a>
-            <a href="https://github.com/rebeccaansems/Alieball" target="_blank" class="btn btn-primary">GitHub</a>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
+	<div id="alieball" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h3 class="modal-title">Alieball</h3>
+				</div>
+				<div class="modal-body">
+					<div class="video-container">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/VCGRWfC5sUo" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<h6>
+						Platform: Windows<br>
+						Language: C# - Unity<br>
+						Fall, Winter 2015/16
+					</h6>
+					<br>
+					<p>
+						Alieball is a high stress, high fun, local multiplayer, platform based, dodgeball game. Each player chooses a team and competes in either an all out, last team standing battle, or try to knock out as many other players as you can in five minutes (coming soon)!
+						<br>
+						Will your team be able to beat all the rest and come out on top? Invite some friends over, grab your controllers, and prepare to spend the next hour raging as your alien characters are pelted with balls from every direction conceivable in the battle to be the best!
+						<br><br>
+						The biggest challenges with Alieball so far are dealing with how Unity/Alieball deals with controllers, specifically Xbox 360 controllers, and general balancing. Since Alieball is my first game that utilizes controllers, as well as my first multiplayer (albeit local multiplayer) game. I have discovered that Unity, and therefore Alieball, has a very interesting way of dealing with controllers - specifically how they deal with axises (thumbsticks). This has not caused many issues in game when the player is moving around, however, this has caused numerous issues with moving between options in level select screens (the "cursor" moves too fast). General balancing has been an issue because games are hard to balance, especially when dealing with up to four different, very human, players. This can cause interesting issues when doing play testing and discovering how different players play Alieball.
+						<br><br>
+						For Alieball I have done all the coding, excluding the player controller, and also excluding majority of the graphical assets. Alieball, although still being a work in progress, has already taught me how controllers work in Unity, how to work with multiplayer games, and how to "move" characters about. Since previously all of my applications had involved either tapping the screen (RainyDays) or clicking buttons (Magic and Battleship) having to move a character around is a very new experience.
+					</p><br>
+					<div class="btn-group btn-group-justified">
+						<a href="https://rebeccaansems.itch.io/alieball" target="_blank" class="btn btn-primary">Windows</a>
+						<a href="http://onegirlsomegames.tumblr.com/tagged/Alieball" target="_blank" class="btn btn-primary">Blog</a>
+						<a href="https://github.com/rebeccaansems/Alieball" target="_blank" class="btn btn-primary">GitHub</a>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
 
+	<div class="container-fluid text-center" id="minor-projects">
+		<h3>Other Projects</h3>
+		<div class="col-sm-2"></div>
 
-  <div class="container-fluid text-center" id="contact">
-    <h2>Contact Me</h2>
-    <div class="col-sm-1"></div>
-    <div class="col-sm-5">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27005.662559238335!2d-63.61017245829087!3d44.645670663008275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b5a211407dbfac1%3A0x666be3a6438b2ddc!2sHalifax%2C+NS!5e0!3m2!1sen!2sca!4v1450639404531" style="width:100%" frameborder="0" style="border:0" class="img-responsive"></iframe>
-    </div>
-    <div class="col-sm-5">
-      <h6>
-        Rebecca Ansems<br>
-        rebecca.ansems@gmail.com<br>
-        902-670-9064
-      </h6>
-      <h6 id="small">Links</h6>
-      <div class="row">
-        <div class="col-sm-2"></div>
-        <div class="col-sm-8">
-          <div class="social">
-            <a href="https://github.com/rebeccaansems" title="github.com/rebeccaansems" target="_blank" style="left: 0%; right: 80%">
-              <i class="zmdi zmdi-github-alt"></i>
-            </a>
-            <a href="http://onegirlsomegames.tumblr.com/" target="_blank" style="left: 20%; right: 60%">
-              <i class="zmdi zmdi-tumblr"></i>
-            </a>
-            <a href="mailto:rebecca.ansems@gmail.com" title="rebecca.ansems@gmail.com" target="_blank" style="left: 40%; right: 40%">
-              <i class="zmdi zmdi-email"></i>
-            </a>
-            <a href="https://www.facebook.com/ansemsrk" title="https://www.facebook.com/ansemsrk" target="_blank" style="left: 60%; right: 20%">
-              <i class="zmdi zmdi-facebook"></i>
-            </a>
-            <a href="https://twitter.com/BeckyAnsems" title="https://twitter.com/BeckyAnsems" target="_blank" style="left: 80%; right: 0%">
-              <i class="zmdi zmdi-twitter"></i>
-            </a>
-          </div>
-        </div>
-      </div>
+		<div class="col-sm-2">
+			<h4><b> Sleep Easy </b></h4>
+			<h5> Volta Open Hackathon <br> April 29 - May 1, 2016</h5>
+			<img src="img/SleepEasy.jpg" class=".img-responsive" style="width:100%" alt="Image">
+			<h6><a href="https://github.com/sallyhill/sleepeazy" target="_blank" id="project-link">GitHub</a></h6>
+			<p> Javascript </p>
+			<p>Sleep Easy fixes the problem of waking up too early, or too late, based on weather conditions. Sleep Easy solves this by waking you up based on the amount of snow fallen.</p>
+		</div>
 
-      <br><br>
-    </div>
-  </div>
+		<div class="col-sm-2">
+			<h4><b> Corinth </b></h4>
+			<h5> Dal CSS W16 Game Jam <br> March 18-20, 2016</h5>
+			<img src="img/Corinth.jpg" class=".img-responsive" style="width:100%" alt="Image">
+			<h6><a href="https://rebeccaansems.itch.io/corinth" id="project-link" target="_blank">Windows</a></h6>
+			<p> C# - Unity </p>
+			<p>Inspired by ancient Greek black figure vases, Corinth is an endless runner set on one of these vases. The vase continuously rotates, revealing new dangers that you will have to avoid.</p>
+		</div>
+
+		<div class="col-sm-2">
+			<h4><b> Settlr </b></h4>
+			<h5> IBM Bluemix Hackathon <br> March 4-6, 2016</h5>
+			<img src="img/Settlr.jpg" class=".img-responsive" style="width:100%" alt="Image">
+			<h6><a href="http://www.dal.ca/news/2016/03/18/hack-attack--dal-hosted-shiftkey-labs-and-ibm-partner-on-open-da.html?&utm_source=Dalhousie&utm_medium=Twitter&utm_campaign=HackAttack%20-%20do" id="project-link" target="_blank">News Article</a></h6>
+			<p> SQL </p>
+			<p>Settlr is a web app that helps someone who just moved to Nova Scotia to determine what town in NS they should move to based on what is important to the person (eg good schools, parks, etc).</p>
+		</div>
+
+		<div class="col-sm-2">
+			<h4><b> OCD: Office Crawler </b></h4>
+			<h5> Global Game Jam <br> January 29-30, 2016</h5>
+			<img src="img/OCDOffice.jpg" class=".img-responsive" style="width:100%" alt="Image">
+			<h6><a href="http://globalgamejam.org/2016/games/ocd-office-crawler" id="project-link"  target="_blank">Windows</a></h6>
+			<p> HTML/CSS </p>
+			<p>OCD: Office Crawler is a web based game with accompanying reference board. Set in an office, you are tasked to uncover and utilize the staff’s daily rituals to meet your goals before the day ends.</p>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid text-center" id="contact">
+	<h2>Contact Me</h2>
+	<div class="col-sm-1"></div>
+	<div class="col-sm-5">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27005.662559238335!2d-63.61017245829087!3d44.645670663008275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b5a211407dbfac1%3A0x666be3a6438b2ddc!2sHalifax%2C+NS!5e0!3m2!1sen!2sca!4v1450639404531" style="width:100%" frameborder="0" style="border:0" class="img-responsive"></iframe>
+	</div>
+	<div class="col-sm-5">
+		<h6>
+			Rebecca Ansems<br>
+			rebecca.ansems@gmail.com<br>
+			902-670-9064
+		</h6>
+		<h6 id="small">Links</h6>
+		<div class="row">
+			<div class="col-sm-2"></div>
+			<div class="col-sm-8">
+				<div class="social">
+					<a href="https://github.com/rebeccaansems" title="github.com/rebeccaansems" target="_blank" style="left: 0%; right: 80%">
+						<i class="zmdi zmdi-github-alt"></i>
+					</a>
+					<a href="http://onegirlsomegames.tumblr.com/" target="_blank" style="left: 20%; right: 60%">
+						<i class="zmdi zmdi-tumblr"></i>
+					</a>
+					<a href="mailto:rebecca.ansems@gmail.com" title="rebecca.ansems@gmail.com" target="_blank" style="left: 40%; right: 40%">
+						<i class="zmdi zmdi-email"></i>
+					</a>
+					<a href="https://www.facebook.com/ansemsrk" title="https://www.facebook.com/ansemsrk" target="_blank" style="left: 60%; right: 20%">
+						<i class="zmdi zmdi-facebook"></i>
+					</a>
+					<a href="https://twitter.com/BeckyAnsems" title="https://twitter.com/BeckyAnsems" target="_blank" style="left: 80%; right: 0%">
+						<i class="zmdi zmdi-twitter"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+		<br><br>
+	</div>
+</div>
 </body>
 </html>
