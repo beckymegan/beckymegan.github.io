@@ -1,5 +1,5 @@
 /* colours: 
-#2980b9 - Blue
+#3A70C0 - Blue
 #F6F6F6 - White
 #2B2B2B - Black
 */
@@ -26,7 +26,7 @@
 }
 
 .btn-primary {
-	background-color: #2980b9;
+	background-color: #3A70C0;
 	border-color: #1c5982;
 }
 
@@ -48,7 +48,7 @@
 
 .social a:hover, .social a:hover div{
   text-decoration: none;
-  background-color: #2980b9;
+  background-color: #3A70C0;
   color: #F6F6F6;
   -webkit-transition: color 300ms ease-in-out;
   transition: color 300ms ease-in-out;
@@ -65,11 +65,11 @@
 }
 
 #links {
-	background-color: #2980b9;
+	background-color: #3A70C0;
 }
 
 #home, .modal-header{
-	background-color: #2980b9;
+	background-color: #3A70C0;
 	color: #F6F6F6;
 }
 
@@ -106,7 +106,7 @@
 }
 
 #resume:hover, #project-link:hover{
-	color: #2980b9;	
+	color: #3A70C0;	
 }
 
 #modal-button:hover {
@@ -156,6 +156,10 @@ p {
 	font-size: 1.2em;
 }
 
+h5 a {
+	text-decoration: underline;
+}
+
 img {
 	border-style: solid;
 	border-width: 0.5em;
@@ -179,22 +183,22 @@ body.modal-open {
 
 ::selection {
 	color: #F6F6F6;
-	background: #2980b9;
+	background: #3A70C0;
 }
 
 ::-moz-selection { /* Code for Firefox */
 	color: #F6F6F6;
-	background: #2980b9;
+	background: #3A70C0;
 }
 
 h4::selection, h1::selection {
-	color: #2980b9;
+	color: #3A70C0;
 	background: #2B2B2B;
 }
 
 h4::-moz-selection, h1::-moz-selection{ /* Code for Firefox */
 	color: #F6F6F6;
-	background: #2980b9;
+	background: #3A70C0;
 }
 
 /*Responsive YouTube video code from AvexDesigns*/

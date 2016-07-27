@@ -1,0 +1,14 @@
+Platform: iOS
+Language: C# - Xamarin
+June-July 2016
+
+
+When do you work best? What time of day do you get the most stuff done? When is your, personal, biological prime time? 
+
+Productivity Tracker - When Do You Work Best? will help you figure that out! Simply enter in how productive you feel for less than a week and Productivity Tracker will tell you the best times for you to get stuff done. With it's simplistic user interface, and quick load times, Productivity Tracker will let you track your information and get back to your day in record time. Perfect for anyone who is curious when their biological prime time is! 
+
+Productivity Tracker is a reasonably simplistic CRUD app which allows the user to input how productive they’re feeling and the app then tracks and reports when the user is the most (and least) productive. Therefore showing the user what time of day would be best for said user to get shit stuff done. This idea was inspired by Thomas Frank of College Info Geeks video regarding biological prime times here. Productivity Tracker was built using Xamarin, a software package that allows native API access to Android, iOS, and Windows phone through C#. In plain English, Xamarin allows me to program in a language I know into multiple different mobile devices in the most effective. Even simpler, it’s pretty great. 
+
+The one truly major learning curve that I faced with Xamarin was learning how to use storyboards. Basically the entire user interface for the iOS apps made in Xamarin are created in the storyboard. My biggest issues with this was simply not understanding how constraints work, what the different elements were called (thought I needed TextView for text, turns out I needed label), and my datepicker was MIA for at least two-three days. That was frustrating. My biggest suggestion if anyone wants one, open up one of the example projects and screw around with that. I didn’t because “lol who needs examples” and as it turns out I do, I really needed too. 
+
+One of the highlights of working on Productivity Tracker for me was being able to practice using a database (SQLite) in a production app, or rather, an app that wasn't built for the sole purpose of using a database. I also enjoyed learning more about C# and Xamarin, a language I greatly enjoy working in and an excellent API that allowed me to develop for my favourite platform (mobile).
