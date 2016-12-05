@@ -73,7 +73,7 @@
 	color: #F6F6F6;
 }
 
-#intro, #projects, #footer, #contact, .modal-body {
+#intro, #intro2, #projects, #footer, #contact, .modal-body {
 	background-color: #F6F6F6;
 	color: #2B2B2B;
 }
@@ -83,7 +83,7 @@
 	color: #F6F6F6;
 }
 
-#projects, #minor-projects, #skills {
+#intro2, #projects, #minor-projects, #skills {
 	padding-bottom: 2em;
 }
 
