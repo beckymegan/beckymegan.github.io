@@ -95,7 +95,7 @@ I also got the Javascript code for the scrolling animation from CSStricks.com. -
 		<div class="col-sm-3"></div>
 		<div class="col-sm-6">
 			<p>
-Hi! I'm Rebecca Ansems, I'm currently a student in my fourth year of my Bachelor of Computer Science degree at <a href="http://www.dal.ca/" target="_blank">Dalhousie University</a> in Halifax, Nova Scotia. I will be graduating in August 2018.<br><br>
+Hi! I'm Rebecca Ansems, I'm currently a student in my fourth year of my Bachelor of Computer Science degree at <a href="http://www.dal.ca/" target="_blank">Dalhousie University</a> in Halifax, Nova Scotia. I will be graduating in December 2018.<br><br>
 I got my start programming through making impossibly difficult platformers in Game Maker in my early pre-teens, and competing in LEGO Mindstorms competitions. Currently I'm learning how to code in Java & C through various university classes, and C# & C++ in my free time.<br>
 			</p>
 		</div>
@@ -136,11 +136,23 @@ I got my start programming through making impossibly difficult platformers in Ga
 				<div class="col-sm-3"></div>
 
 				<div class="col-sm-3">
+					<h3>Brick Break Deluxe</h3>
+					<a data-toggle="modal" data-target="#brickbreak" id="modal-button">
+						<img src="img/IcBrick.jpg" class=".img-responsive" style="width:100%" alt="Image">
+					</a>
+				</div>
+
+				<div class="col-sm-3">
 					<h3>Series Finder</h3>
 					<a data-toggle="modal" data-target="#seriesfinder" id="modal-button">
 						<img src="img/IcSeries.jpg" class=".img-responsive" style="width:100%" alt="Image">
 					</a>
 				</div>
+
+			</div>
+			<div class="row">
+				<div class="col-sm-3"></div>
+
 
 				<div class="col-sm-3">
 					<h3>Productivity Tracker</h3>
@@ -149,10 +161,6 @@ I got my start programming through making impossibly difficult platformers in Ga
 					</a>
 				</div>
 
-			</div>
-			<div class="row">
-				<div class="col-sm-3"></div>
-
 				<div class="col-sm-3">
 					<h3>Alieball</h3>
 					<a data-toggle="modal" data-target="#alieball" id="modal-button">
@@ -160,17 +168,43 @@ I got my start programming through making impossibly difficult platformers in Ga
 					</a>
 				</div>
 
-				<div class="col-sm-3">
-					<h3>Rainy Days</h3>
-					<a data-toggle="modal" data-target="#rainydays" id="modal-button">
-						<img src="img/IcRainyDays.jpg" class=".img-responsive" style="width:100%" alt="Image">
-					</a>
-				</div>
-
 			</div>
 		</div>
 
 		<!-- Modals -->
+		<div id="brickbreak" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h3 class="modal-title">Brick Break Deluxe</h3>
+					</div>
+					<div class="modal-body">
+						<img src="img/BrickBreak.jpg" class=".img-responsive" style="width:100%" alt="Image">
+						<h5>
+							Platforms: iOS <br>
+							Language: C# - Xamarin<br>
+							Winter 2017
+						</h5>
+						<p>
+							Twist and turn your iPhone to help guide the ball down through the endless layers of bricks in Brick Break Deluxe, a modern twist on a classic arcade favorite. Four different power ups will assist you in your journey but beware the (literal) fans that will hamper your progress. What’s the highest score you can get? How far can you go down? Can you unlock all the balls?
+						<br><br>
+							Brick Break Deluxe utilizes the phone's accelerometer to determine how far the ball goes in either direction. Brick Break Deluxe also uses Unity's built in player prefs in order to populate an accurate high score table, as well as to track different statistics so that the player can unlock things like different ball colors.
+						</p><br>
+						<div class="btn-group btn-group-justified">
+							<a href="https://itunes.apple.com/us/app/brick-break-deluxe/id1207500382?ls=1&mt=8" target="_blank" class="btn btn-primary">iOS</a>
+							<a href="https://play.google.com/store/apps/details?id=com.RebeccaAnsems.brickbreakdeluxe&hl=en" target="_blank" class="btn btn-primary">Android</a>
+							<a href="http://blog.rebeccaansems.com/tagged/Gem-Drop" target="_blank" class="btn btn-primary">Blog</a>
+							<a href="https://github.com/rebeccaansems/Gem-Drop" target="_blank" class="btn btn-primary">GitHub</a>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<div id="seriesfinder" class="modal fade" role="dialog">
 			<div class="modal-dialog">
 				<div class="modal-content">
@@ -185,7 +219,6 @@ I got my start programming through making impossibly difficult platformers in Ga
 							Language: C# - Xamarin<br>
 							August 2016
 						</h5>
-						<br>
 						<p>
 							Ever go to a bookstore or library and pick up a random book, one you didn't recognize the name of but the art was cool or the description was super compelling? Then you get home and start reading, get a chapter or two in and realize that that not only was this book part of a series but this book was actually the third in a trilogy?
 							<br><br>
@@ -222,7 +255,6 @@ I got my start programming through making impossibly difficult platformers in Ga
 							Language: C# - Xamarin<br>
 							June - July 2016
 						</h5>
-						<br>
 						<p>
 							<i>When do you work best? What time of day do you get the most stuff done? When is your, personal, biological prime time?</i>
 							<br><br>
@@ -263,7 +295,6 @@ I got my start programming through making impossibly difficult platformers in Ga
 							Language: C# - Unity<br>
 							Fall, Winter 2015/16
 						</h5>
-						<br>
 						<p>
 							Alieball is a high stress, high fun, local multiplayer, platform based, dodgeball game. Each player chooses a team and competes in either an all out, last team standing battle, or try to knock out as many other players as you can in five minutes (coming soon)!
 							<br>
@@ -286,42 +317,6 @@ I got my start programming through making impossibly difficult platformers in Ga
 			</div>
 		</div>
 
-		<div id="rainydays" class="modal fade" role="dialog">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal">&times;</button>
-						<h3 class="modal-title">Rainy Days</h3>
-					</div>
-					<div class="modal-body">
-						<img src="img/RainyDays.jpg" class=".img-responsive" style="width:100%" alt="Image">
-						<h5>
-							Platforms: iOS & Android<br>
-							Language: C# - Unity<br>
-							Summer 2015
-						</h5>
-						<br>
-						<p>
-							<i>Nothing ruins a picnic faster than rain clouds and an ant invasion! Help save the picnickers from a ruined day by tapping away the ants and clouds. Features many challenging levels, high replayability, and addictive gameplay. Zero in-app purchases and does not require wifi results in a fun game to play, anywhere. Regular updates keeps gameplay fresh and new, it’s a new adventure every time you play!</i>
-							<br><br>
-							Rainy Days is a single tap game where players have to quickly tap away clouds (the longer the clouds are on screen the faster the score drops) while also tapping away ants (if the ants get to the picnic basket the player loses health). Successfully tapping away a cloud or ant increases the player's score by one. Once a certain score is reached, dependent on the level, the level is medalled and the next level is unlocked. Gold medal if the player reaches the required score, with full health and under the time challenge, limit (which changes dependent on the level), silver medal if the player reaches the required score with full health but over the time challenge limit, and bronze medal if the player finishes with less than full health, regardless of the time taken to complete.
-							<br><br>
-							Rainy Days was my first (almost) totally self made project, with the music/sound effects being the only thing I didn't make. The biggest struggle that I faced with making an application by myself was having to learn how to do everything, with no one else to rely on. This was my first project in Unity, as well as my first project written in C#, so I had to trial/error every part of the project. I learned a lot through this project, including the process of submitting an application to both the Google Play Store and iTunes.
-						</p><br>
-						<div class="btn-group btn-group-justified">
-							<a href="https://itunes.apple.com/us/app/rainy-days-the-game/id1051590281?ls=1&mt=8" target="_blank" class="btn btn-primary">iOS</a>
-							<a href="https://play.google.com/store/apps/details?id=com.RebeccaAnsems.RainyDays" target="_blank" class="btn btn-primary">Android</a>
-							<a href="http://onegirlsomegames.tumblr.com/tagged/Rainy-Days" target="_blank" class="btn btn-primary">Blog</a>
-							<a href="https://github.com/rebeccaansems/RainyDays" target="_blank" class="btn btn-primary">GitHub</a>
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
 		<div class="container-fluid text-center" id="minor-projects">
 			<h2>Hackathon Projects</h2>
 
@@ -331,6 +326,17 @@ I got my start programming through making impossibly difficult platformers in Ga
 				<div class="col-sm-2"></div>
 
 				<div class="col-sm-2">
+					<h4><b> Six-Twelve-Six </b></h4>
+					<h6> Hack Rice 7 <br> September 22 - 24, 2017</h6>
+					<img src="img/SixTwelveSix.jpg" class=".img-responsive" style="width:100%" alt="Image">
+					<h5><a href="https://github.com/rebeccaansems/DiabetesTracker-HackRice" target="_blank" id="project-link">GitHub</a> / <a href="http://www.houstonchronicle.com/news/houston-texas/houston/article/Rice-University-s-Hackathon-work-to-solve-health-12225209.php" target="_blank" id="project-link">Article</a></h5>
+					<h6> Java - Android </h6>
+					<p>Six-Twelve-Six is an easy way to view blood sugar trends, a predicted A1C value, and extensive catalog of food with carb values.</p>
+					<h6><b>Winner<br>Texas Childrens' Hospital: Best Healthcare Track Project - Patient Engagement</b></h6>
+					<br>
+				</div>
+
+				<div class="col-sm-2">
 					<h4><b> FOAMfilter </b></h4>
 					<h6> Camp Volta Hackathon <br> July 22 - 24, 2016</h6>
 					<img src="img/FOAMfilter.jpg" class=".img-responsive" style="width:100%" alt="Image">
@@ -338,16 +344,6 @@ I got my start programming through making impossibly difficult platformers in Ga
 					<h6> C# - Xamarin </h6>
 					<p>FOAMfilter allows medical professionals to filter tweets using #FOAMed or regarding the FOAM (Free Open Access Meducation)  movement for information relevant to their profession.</p>
 					<h6><b>First Place<br>Most Commercializable</b></h6>
-					<br>
-				</div>
-
-				<div class="col-sm-2">
-					<h4><b> Sleep Easy </b></h4>
-					<h6> Volta Open Hackathon <br> April 29 - May 1, 2016</h6>
-					<img src="img/SleepEasy.jpg" class=".img-responsive" style="width:100%" alt="Image">
-					<h5><a href="https://github.com/sallyhill/sleepeazy" target="_blank" id="project-link">GitHub</a> / <a href="http://blog.rebeccaansems.com/post/143713773833/volta-open-hackathon-2016-sleep-easy" target="_blank" id="project-link">Blog</a></h5>
-					<h6> Javascript </h6>
-					<p>Sleep Easy fixes the problem of waking up too early, or too late, based on weather conditions. Sleep Easy solves this by waking you up based on the amount of snow fallen.</p>
 					<br>
 				</div>
 
